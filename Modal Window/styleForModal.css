@@ -1,0 +1,2119 @@
+
+#okno{
+    /*display: none;*/
+    position: absolute;
+    width: 1280px;
+    height: 2135px;
+    left: 100px;
+    top: 80px;
+    background: #FFFFFF;
+    border-radius: 40px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    padding: 30px 0;
+    /*border: 3px solid #0000cc;*/
+}
+
+/*#okno:target*/
+/*{*/
+/*    display: block;*/
+/*}*/
+
+#modal{
+    background-color: rgba(53, 29, 14, 0.75);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+#modal:target{
+    display: block;
+}
+
+#modalDialog{
+    display: none;
+    pointer-events: none;
+}
+
+#modalDialog:target{
+    display: block;
+    pointer-events: auto;
+}
+
+/* Iconly */
+.close {
+    position: absolute;
+    left: 93.12%;
+    right: 3.75%;
+    top: 1.87%;
+    bottom: 96.25%;
+    cursor: pointer;
+
+    /* Crystal White */
+
+    background: #FFFFFF;
+    /* NEW/Gizzly wool */
+
+    border: 1px solid #88776B;
+    box-sizing: border-box;
+    border-radius: 40px;
+}
+.close:before, .close:after {
+    position: absolute;
+    left: 18px;
+    top: 13px;
+    content: ' ';
+    height: 16px;
+    width: 2px;
+    background-color: #FC842D;
+}
+
+.close:before {
+    transform: rotate(45deg);
+}
+.close:after {
+    transform: rotate(-45deg);
+}
+
+div.frame1\.1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    /*border: 3px solid #0000cc; !* hhhhhhhhhhhhhh*!*/
+
+    position: absolute;
+    width: 251px;
+    height: 72px;
+    left: 108px;
+    top: 40px;
+}
+
+div.image{
+    position: relative;
+    width: 72px;
+    height: 72px;
+    left: -90px;
+    top: 0px;
+
+    background: url(zebra.png), url(zebra.png);
+    background-size: cover;
+
+    /* Inside Auto Layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 16px;
+}
+
+div.frame1\.2{
+    /* Auto Layout */
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    /*border: 3px solid #0000cc; !* hhhhhhhhhhhhhh*!*/
+
+    position: relative;
+    width: 163px;
+    height: 62px;
+    left: 69px;
+    top: 5px;
+
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 16px;
+}
+
+
+p.name{
+    position: relative;
+    width: 73px;
+    height: 32px;
+    left: 0px;
+    top: 0px;
+
+    /* NEW / H3 */
+
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    /* identical to box height, or 133% */
+
+    /* NEW/Strong Coffee */
+
+    color: #351D0E;
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 4px 0px;
+}
+
+div.frame1\.3{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+
+    position: relative;
+    width: 163px;
+    height: 26px;
+    left: calc(50% - 168px/2);
+    top: -9px;
+
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 4px 0px;
+    /*border: 3px solid #0000cc; !* hhhhhhhhhhhhhh*!*/
+}
+
+div.frame1\.4{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+
+    position: relative;
+    width: 54px;
+    height: 26px;
+    left: -55px;
+    top: 0px;
+
+
+    /* Inside Auto Layout */
+    /*border: 3px solid #0000cc; !* hhhhhhhhhhhhhh*!*/
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 8px;
+}
+
+div.star{
+    position: relative;
+    left: -90px;
+    top: 3.85%;
+    bottom: 3.85%;
+
+    /*background: url(onebit.png), url("onebit.png");*/
+
+    /* Inside Auto Layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 4px;
+}
+
+p.ratingResult{
+    position: static;
+    width: 26px;
+    height: 26px;
+    left: 28px;
+    top: 0px;
+
+    /* NEW/Large/Normal */
+
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 26px;
+    /* identical to box height, or 144% */
+
+    display: flex;
+    align-items: center;
+
+    /* NEW/Strong Coffee */
+
+    color: #351D0E;
+
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 4px;
+}
+
+p.feedback{
+    position: absolute;
+    width: 101px;
+    height: 26px;
+    left: 58px;
+    top: 0px;
+
+    /* NEW / Large / Bold */
+
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+    /* identical to box height, or 144% */
+
+    display: flex;
+    align-items: center;
+
+    /* NEW/Strong Coffee */
+
+    color: #351D0E;
+
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 8px;
+}
+
+div.frameGeo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: absolute;
+    width: 484px;
+    height: 278px;
+    left: 108px;
+    top: 144px;
+}
+
+div.map{
+    position: absolute;
+    width: 484px;
+    height: 200px;
+    left: -3px;
+    top: -26px;
+
+    border-radius: 24px;
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 24px 0px;
+}
+
+iframe.map2{
+    height: 200px;
+    width: 484px;
+    border-radius: 24px;
+}
+
+div.frameInfo{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: absolute;
+    width: 430px;
+    height: 54px;
+    left: 1px;
+    top: 200px;
+    /*border: 1px solid #0000cc; !* hhhhhhhhhhhhhh*!*/
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 24px 0px;
+}
+
+div.mobilePhones{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: absolute;
+    width: 187px;
+    height: 54px;
+    left: calc(50% - 197px/2 - 157.5px);
+    top: -3px;
+
+    /*border: 3px solid #0000cc; !* hhhhhhhhhhhhhh*!*/
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 40px;
+}
+
+p.telephone{
+    position: absolute;
+    width: 155px;
+    height: 24px;
+    left: 0px;
+    top: -4px;
+
+    /* NEW / Small / Normal */
+
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+
+    /* NEW/Gizzly wool */
+
+    color: #88776B;
+
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 4px 0px;
+}
+
+div.frameMobile{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+
+    position: absolute;
+    width: 187px;
+    height: 26px;
+    left: 0px;
+    top: 24px;
+    /*border: 3px solid #0000cc; !* hhhhhhhhhhhhhh*!*/
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 4px 0px;
+}
+
+img.phone{
+    position: absolute;
+    left: 0.33%;
+    right: 8.33%;
+    top: 8.34%;
+    bottom: 8.33%;
+
+    /* NEW/Autumn pumpkin */
+
+    background: #FC842D;
+}
+
+div.phoneNumber{
+    position: static;
+    width: 155px;
+    height: 26px;
+    left: 32px;
+    top: 0px;
+
+    /* NEW/Large/Normal */
+
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 26px;
+    /* identical to box height, or 144% */
+
+
+    /* NEW/Strong Coffee */
+
+    color: #351D0E;
+
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 8px;
+}
+
+div.address{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: absolute;
+    width: 240px;
+    height: 54px;
+    left: calc(50% - 203px/2 + 39px);
+    top: -3px;
+
+    /* Inside Auto Layout */
+    /*border: 3px solid red; !* hhhhhhhhhhhhhh*!*/
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 40px;
+}
+
+p.addressText{
+    position: absolute;
+    width: 143px;
+    height: 24px;
+    left: 0px;
+    top: -4px;
+
+    /* NEW / Small / Normal */
+
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+    /* NEW/Gizzly wool */
+    color: #88776B;
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 4px 0px;
+}
+
+div.frameAddress{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+
+    position: absolute;
+    width: 240px;
+    height: 26px;
+    left: -3px;
+    top: 21px;
+    /*border: 3px solid #0000cc; !* hhhhhhhhhhhhhh*!*/
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 4px 0px;
+}
+
+img.geo{
+    position: absolute;
+    left: 0.58%;
+    right: 14.58%;
+    top: 8.33%;
+    bottom: 8.33%;
+
+    /* NEW/Autumn pumpkin */
+
+    background: #FC842D;
+}
+
+p.realAddress{
+    position: static;
+    width: 173px;
+    height: 26px;
+    left: 30px;
+    top: 0px;
+
+    /* NEW/Large/Normal */
+
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 26px;
+    /* identical to box height, or 144% */
+    /* NEW/Strong Coffee */
+
+    color: #351D0E;
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 6px;
+}
+
+p.signUpText{
+    position: absolute;
+    width: 201px;
+    height: 32px;
+    left: 108px;
+    top: 470px;
+
+    /* NEW / H3 */
+
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    /* identical to box height, or 133% */
+
+
+    /* NEW/Strong Coffee */
+
+    color: #351D0E;
+
+}
+
+form.frameSign{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: absolute;
+    width: 445px;
+    height: 696px;
+    left: 108px;
+    top: 535px;
+    /*border: 1px solid #0000cc; !* hhhhhhhhhhhhhh*!*/
+}
+
+div.frameData{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: absolute;
+    width: 445px;
+    height: 312px;
+    left: 0px;
+    top: -41px;
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 40px 0px;
+    /*border: 1px solid #0000cc; !* hhhhhhhhhhhhhh*!*/
+}
+
+div.frameData2{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+
+    position:  absolute;
+    width: 445px;
+    height: 284px;
+    left: -1px;
+    top: 23px;
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    margin: 4px 0px;
+    /*border: 1px solid #0000cc; !* hhhhhhhhhhhhhh*!*/
+}
+
+.radio-container .days{
+    background: #FFFFFF;
+}
+
+.radio-container .days input{
+    display: none;
+}
+
+.radio-container .days label{
+    display: inline-block;
+    cursor: pointer;
+    user-select: none;
+
+    border-radius: 8px 8px 0px 0px;
+    width: 56px;
+    height: 72px;
+
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+
+    text-align: center;
+
+    /* NEW/Strong Coffee */
+
+    color: #351D0E;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.radio-container .days input{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.radio-container .days input:checked + label{
+    background: #f5f2f0;
+}
+
+p.daysText{
+    vertical-align: middle;
+}
+
+label.day1Text{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+label.day2Text{
+    position: absolute;
+    left: 56px;
+    top: 0px;
+}
+
+label.day3Text{
+    position: absolute;
+    left: 112px;
+    top: 0px;
+}
+
+label.day4Text{
+    position: absolute;
+    left: 168px;
+    top: 0px;
+}
+
+label.day5Text{
+    position: absolute;
+    left: 224px;
+    top: 0px;
+}
+
+label.day6Text{
+    position: absolute;
+    left: 280px;
+    top: 0px;
+}
+
+label.day7Text{
+    position: absolute;
+    left: 336px;
+    top: 0px;
+}
+
+div.nextDate{
+    cursor: pointer;
+    user-select: none;
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    left: 392px;
+    top: 20px;
+    border-radius: 20px;
+    background: linear-gradient(0deg, #F5F2F0, #F5F2F0), #FAF8F6;
+}
+
+.nextDate input{
+    display: none;
+}
+
+label.vec{
+    position: absolute;
+    width: 4px;
+    height: 8px;
+    left: 14px;
+    top: 12px;
+}
+
+i{
+    position: absolute;
+    border: solid #351D0E;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 2px;
+    left: -2px;
+    top: 1px;
+}
+
+i.arrow{
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+
+div.dayTimes{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    position: absolute;
+    width: 445px;
+    height: 148px;
+    left: 0px;
+    top: 72px;
+
+    background: #F5F2F0;
+    border-radius: 16px;
+}
+
+div.dayTimes2{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: absolute;
+    width: 397px;
+    height: 100px;
+    left: 24px;
+    top: 24px;
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 0px;
+}
+
+.dayTimes2 .time{
+    background: #FFFFFF;
+}
+
+.dayTimes2 .time input{
+    display: none;
+}
+
+.dayTimes2 .time label{
+    cursor: pointer;
+    user-select: none;
+    /*border: 1px solid #0000cc; !* hhhhhhhhhhhhhh*!*/
+    display: inline-block;
+
+    width: 73px;
+    height: 44px;
+    background: #FFFFFF;
+
+    /* NEW/Autumn pumpkin */
+
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+
+    text-align: center;
+
+    /* NEW/Strong Coffee */
+
+    color: #351D0E;
+
+    border-radius: 8px;
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.dayTimes2 .time input{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.dayTimes2 .time input:checked + label{
+    background: #FC842D;
+}
+
+.dayTimes2 .time input:checked + label + div.timesText{
+    color: #351D0E;
+}
+
+div.timesText{
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    width: 41px;
+    height: 24px;
+    left: 16px;
+    top: 10px;
+
+    /* NEW / Small / Bold */
+
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 550;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: #351D0E;;
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+label.time1Text{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+label.time2Text{
+    position: absolute;
+    left: 81px;
+    top: 0px;
+}
+
+label.time3Text{
+    position: absolute;
+    left: 162px;
+    top: 0px;
+}
+
+label.time4Text{
+    position: absolute;
+    left: 243px;
+    top: 0px;
+}
+
+label.time5Text{
+    position: absolute;
+    left: 324px;
+    top: 0px;
+}
+
+label.time6Text{
+    position: absolute;
+    left: 0px;
+    top: 56px;
+}
+
+label.time7Text{
+    position: absolute;
+    left: 81px;
+    top: 56px;
+}
+
+label.time8Text{
+    position: absolute;
+    left: 162px;
+    top: 56px;
+}
+
+label.time9Text{
+    position: absolute;
+    left: 243px;
+    top: 56px;
+}
+
+label.time10Text{
+    position: absolute;
+    left: 324px;
+    top: 56px;
+}
+
+div.saveDateTime{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: absolute;
+    width: 292px;
+    height: 48px;
+    left: 0px;
+    top: 219px;
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 16px 0px;
+    /*border: 1px solid #0000cc; !* hhhhhhhhhhhhhh*!*/
+}
+
+div.buttonSave{
+    position: absolute;
+    width: 140px;
+    height: 48px;
+    left: calc(50% - 140px/2 - 88px);
+    top: -1px;
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 12px;
+    /*border: 1px solid #0000cc; !* hhhhhhhhhhhhhh*!*/
+}
+
+.saveDateTime .buttonSave input{
+    display: none;
+}
+
+label.saveRect{
+    position: absolute;
+    height: 48px;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    cursor: pointer;
+    user-select: none;
+
+    /* NEW/Autumn pumpkin */
+
+    background: #FC842D;
+    border-radius: 16px;
+}
+
+div.saveText{
+    position: absolute;
+    height: 24px;
+    left: 35px;
+    right: 27px;
+    top: 12px;
+
+    /* NEW / Small / Bold */
+
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    /* Crystal White */
+
+    color: #FFFFFF;
+}
+
+div.buttonCancel{
+    position: absolute;
+    width: 140px;
+    height: 48px;
+    left: calc(50% - 140px/2 + 63px);
+    top: -1px;
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 12px;
+    /*border: 1px solid #0000cc; !* hhhhhhhhhhhhhh*!*/
+}
+
+.saveDateTime .buttonCancel input{
+    display: none;
+}
+
+label.cancelRect{
+    position: absolute;
+    height: 48px;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    cursor: pointer;
+    user-select: none;
+    /* NEW/Sand foam */
+
+    border: 1px solid #E7E2E0;
+    box-sizing: border-box;
+    border-radius: 16px;
+}
+
+div.cancelText{
+    position: absolute;
+    height: 24px;
+    left: 32px;
+    right: 32px;
+    top: 12px;
+
+    /* NEW / Small / Bold */
+
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    /* NEW/Strong Coffee */
+
+    color: #351D0E;
+
+}
+
+p.dataText{
+    position: static;
+    width: 123px;
+    height: 24px;
+    left: 0px;
+    top: 0px;
+
+    /* NEW / Small / Normal */
+
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+    /* NEW/Gizzly wool */
+
+    color: #88776B;
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 4px 0px;
+}
+
+div.data{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: absolute;
+    width: 400px;
+    height: 344px;
+    left: 0px;
+    top: 311px;
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 40px 0px;
+}
+
+div.data2{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: absolute;
+    width: 400px;
+    height: 280px;
+    left: -1px;
+    top: -17px;
+
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 16px 0px;
+}
+
+input.yourName{
+    position: absolute;
+    width: 400px;
+    height: 48px;
+    left: 0px;
+    top: -13px;
+
+    /* NEW/limestone */
+
+    background: linear-gradient(0deg, #F5F2F0, #F5F2F0), #FAF8F6;
+    border-radius: 16px;
+    outline:none;
+    border: 0;
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 12px 0px;
+}
+
+input.inputNumber{
+    position: absolute;
+    width: 400px;
+    height: 48px;
+    left: 0px;
+    top: 47px;
+
+    /* NEW/limestone */
+
+    background: linear-gradient(0deg, #F5F2F0, #F5F2F0), #FAF8F6;
+    border-radius: 16px;
+    outline:none;
+    border: 0;
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 12px 0px;
+}
+
+input.typeOfWild{
+    position: absolute;
+    width: 400px;
+    height: 48px;
+    left: 0px;
+    top: 107px;
+
+    /* NEW/limestone */
+
+    background: linear-gradient(0deg, #F5F2F0, #F5F2F0), #FAF8F6;
+    border-radius: 16px;
+    outline:none;
+    border: 0;
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    margin: 12px 0px;
+
+}
+
+input.description{
+    position: absolute;
+    width: 400px;
+    height: 100px;
+    left: 0px;
+    top: 167px;
+
+    /* NEW/limestone */
+
+    background: linear-gradient(0deg, #F5F2F0, #F5F2F0), #FAF8F6;
+    border-radius: 16px;
+    outline:none;
+    border: 0;
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 3;
+    flex-grow: 0;
+    margin: 12px 0px;
+}
+
+div.frameButton{
+    position: absolute;
+    width: 220px;
+    height: 48px;
+    left: calc(50% - 220px/2 - 90px);
+    top: 279px;
+
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 16px 0px;
+}
+
+input.submit1{
+    position: absolute;
+    height: 48px;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+
+    /* NEW/Autumn pumpkin */
+    outline: none;
+    border: 0;
+    background: #FC842D;
+    border-radius: 16px;
+    cursor: pointer;
+    user-select: none;
+    /*height: 24px;*/
+    /*left: 27px;*/
+    /*right: 26px;*/
+    /*top: 12px;*/
+
+    /* NEW / Small / Bold */
+
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 5px 40px;
+    /* Crystal White */
+
+    color: #FFFFFF;
+}
+
+p.servicesText{
+    position: absolute;
+    width: 234px;
+    height: 32px;
+    left: 648px;
+    top: 110px;
+
+    /* NEW / H3 */
+
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    /* identical to box height, or 133% */
+
+
+    /* NEW/Strong Coffee */
+
+    color: #351D0E;
+}
+
+div.frameServices{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: absolute;
+    width: 463px;
+    height: 92px;
+    left: 648px;
+    top: 192px;
+}
+
+.frameServices input{
+    display: none;
+}
+
+div.servicesText{
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #351D0E;
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    transition: background 9999999s;
+}
+
+label.serviceButton1{
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    width: 76px;
+    height: 40px;
+    left: 0px;
+    top: 0px;
+
+    /* NEW/Autumn pumpkin */
+
+    background: linear-gradient(0deg, #F5F2F0, #F5F2F0), #FAF8F6;
+    border-radius: 8px;
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    transition: background 9999999s;
+}
+
+label.serviceButton1:active{
+    background: #FC842D;
+    transition: background 0s;
+}
+
+label.serviceButton2{
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    width: 121px;
+    height: 40px;
+    left: 84px;
+    top: 0px;
+
+    /* NEW/limestone */
+    transition: background 9999999s;
+    background: linear-gradient(0deg, #F5F2F0, #F5F2F0), #FAF8F6;
+    border-radius: 8px;
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+label.serviceButton2:active{
+    background: #FC842D;
+    transition: background 0s;
+}
+
+label.serviceButton3{
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    width: 115px;
+    height: 40px;
+    left: 213px;
+    top: 0px;
+
+    /* NEW/limestone */
+    transition: background 9999999s;
+    background: linear-gradient(0deg, #F5F2F0, #F5F2F0), #FAF8F6;
+    border-radius: 8px;
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+
+label.serviceButton3:active{
+    background: #FC842D;
+    transition: background 0s;
+}
+
+label.serviceButton4{
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    width: 127px;
+    height: 40px;
+    left: 336px;
+    top: 0px;
+
+    /* NEW/limestone */
+    transition: background 9999999s;
+    background: linear-gradient(0deg, #F5F2F0, #F5F2F0), #FAF8F6;
+    border-radius: 8px;
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 3;
+    flex-grow: 0;
+}
+
+label.serviceButton4:active{
+    background: #FC842D;
+    transition: background 0s;
+}
+
+label.serviceButton5{
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    width: 123px;
+    height: 40px;
+    left: 0px;
+    bottom: 0px;
+
+    /* NEW/limestone */
+    transition: background 9999999s;
+    background: linear-gradient(0deg, #F5F2F0, #F5F2F0), #FAF8F6;
+    border-radius: 8px;
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+label.serviceButton5:active{
+    background: #FC842D;
+    transition: background 0s;
+}
+
+label.serviceButton6{
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    width: 99px;
+    height: 40px;
+    left: 131px;
+    bottom: 0px;
+
+    /* NEW/limestone */
+    transition: background 9999999s;
+    background: linear-gradient(0deg, #F5F2F0, #F5F2F0), #FAF8F6;
+    border-radius: 8px;
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+label.serviceButton6:active{
+    background: #FC842D;
+    transition: background 0s;
+}
+
+label.serviceButton7{
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    width: 87px;
+    height: 40px;
+    left: 238px;
+    bottom: 0px;
+
+    /* NEW/limestone */
+    transition: background 9999999s;
+    background: linear-gradient(0deg, #F5F2F0, #F5F2F0), #FAF8F6;
+    border-radius: 8px;
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+
+label.serviceButton7:active{
+    background: #FC842D;
+    transition: background 0s;
+}
+
+div.framePriceCom{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: absolute;
+    width: 552px;
+    height: 735px;
+    left: 648px;
+    top: 316px;
+}
+
+div.framePrice{
+    width: 524px;
+    height: 20px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0px;
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 15px 0px;
+}
+
+div.framePrice1{
+    position: absolute;
+    left: 0px;
+    top: -16px;
+}
+
+div.line{
+    width: 524px;
+    height: 0px;
+
+    opacity: 0.4;
+    /* NEW/Sand foam */
+
+    border: 1px solid #E7E2E0;
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 15px 0px;
+}
+
+div.line1{
+    position: absolute;
+    left: 0px;
+    top: 19px;
+}
+
+div.framePrice2{
+    position: absolute;
+    left: 0px;
+    top: 34px;
+}
+
+div.serName{
+    /* OLD/regular */
+
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height, or 125% */
+    /* NEW/Strong Coffee */
+
+    color: #351D0E;
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 32px;
+}
+
+div.price{
+    /* OLD/medium */
+
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+
+    /* identical to box height, or 125% */
+    /* NEW/Strong Coffee */
+    color: #351D0E;
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 32px;
+}
+
+p.serName1{
+    position: absolute;
+    width: 227px;
+    height: 20px;
+    left: 0px;
+    top: 0px;
+}
+
+p.prise1{
+    position: absolute;
+    width: 42px;
+    height: 20px;
+    left: 482px;
+    top: 0px;
+}
+
+p.serName2{
+    position: absolute;
+    width: 141px;
+    height: 20px;
+    left: 0px;
+    top: 0px;
+}
+
+p.prise2{
+    position: absolute;
+    width: 42px;
+    height: 20px;
+    left: 482px;
+    top: 0px;
+}
+
+div.line2{
+    position: absolute;
+    left: 0px;
+    top: 69px;
+}
+
+div.framePrice3{
+    position: absolute;
+    left: 0px;
+    top: 84px;
+}
+
+p.serName3{
+    position: absolute;
+    width: 140px;
+    height: 20px;
+    left: 0px;
+    top: 0px;
+}
+
+p.prise3{
+    position: absolute;
+    width: 42px;
+    height: 20px;
+    left: 482px;
+    top: 0px;
+}
+
+div.line3{
+    position: absolute;
+    left: 0px;
+    top: 119px;
+}
+
+div.framePrice4{
+    position: absolute;
+    left: 0px;
+    top: 134px;
+}
+
+p.serName4{
+    position: absolute;
+    width: 244px;
+    height: 20px;
+    left: 0px;
+    top: 0px;
+}
+
+p.prise4{
+    position: absolute;
+    width: 42px;
+    height: 20px;
+    left: 482px;
+    top: 0px;
+}
+
+div.line4{
+    position: absolute;
+    left: 0px;
+    top: 169px;
+}
+
+div.framePrice5{
+    position: absolute;
+    left: 0px;
+    top: 184px;
+}
+
+p.serName5{
+    position: absolute;
+    width: 243px;
+    height: 20px;
+    left: 0px;
+    top: 0px;
+}
+
+p.prise5{
+    position: absolute;
+    width: 42px;
+    height: 20px;
+    left: 481px;
+    top: 0px;
+}
+
+div.line5{
+    position: absolute;
+    left: 0px;
+    top: 219px;
+}
+
+div.framePrice6{
+    position: absolute;
+    left: 0px;
+    top: 234px;
+}
+
+p.serName6{
+    position: absolute;
+    width: 408px;
+    height: 20px;
+    left: 0px;
+    top: 0px;
+}
+
+p.prise6{
+    position: absolute;
+    width: 42px;
+    height: 20px;
+    left: 481px;
+    top: 0px;
+}
+
+div.line6{
+    position: absolute;
+    left: 0px;
+    top: 269px;
+}
+
+div.framePrice7{
+    position: absolute;
+    left: 0px;
+    top: 284px;
+}
+
+p.serName7{
+    position: absolute;
+    width: 181px;
+    height: 20px;
+    left: 0px;
+    top: 0px;
+}
+
+p.prise7{
+    position: absolute;
+    width: 40px;
+    height: 20px;
+    left: 484px;
+    top: 0px;
+}
+
+div.line7{
+    position: absolute;
+    left: 0px;
+    top: 319px;
+}
+
+div.framePrice8{
+    position: absolute;
+    left: 0px;
+    top: 334px;
+}
+
+p.serName8{
+    position: absolute;
+    width: 345px;
+    height: 20px;
+    left: 0px;
+    top: 0px;
+}
+
+p.prise8{
+    position: absolute;
+    width: 32px;
+    height: 20px;
+    left: 492px;
+    top: 0px;
+}
+
+div.line8{
+    position: absolute;
+    left: 0px;
+    top: 369px;
+}
+
+div.framePrice9{
+    position: absolute;
+    left: 0px;
+    top: 384px;
+}
+
+p.serName9{
+    position: absolute;
+    width: 308px;
+    height: 20px;
+    left: 0px;
+    top: 0px;
+}
+
+p.prise9{
+    position: absolute;
+    width: 40px;
+    height: 20px;
+    left: 484px;
+    top: 0px;
+}
+
+div.line9{
+    position: absolute;
+    left: 0px;
+    top: 419px;
+}
+
+div.framePrice10{
+    position: absolute;
+    left: 0px;
+    top: 434px;
+}
+
+p.serName10{
+    position: absolute;
+    width: 294px;
+    height: 20px;
+    left: 0px;
+    top: 0px;
+}
+
+p.prise10{
+    position: absolute;
+    width: 43px;
+    height: 20px;
+    left: 481px;
+    top: 0px;
+}
+
+div.line10{
+    position: absolute;
+    left: 0px;
+    top: 469px;
+}
+
+div.framePrice11{
+    position: absolute;
+    left: 0px;
+    top: 484px;
+}
+
+p.serName11{
+    position: absolute;
+    width: 184px;
+    height: 20px;
+    left: 0px;
+    top: 0px;
+}
+
+p.prise11{
+    position: absolute;
+    width: 32px;
+    height: 20px;
+    left: 492px;
+    top: 0px;
+}
+
+div.line11{
+    position: absolute;
+    left: 0px;
+    top: 519px;
+}
+
+div.framePrice12{
+    position: absolute;
+    left: 0px;
+    top: 534px;
+}
+
+p.serName12{
+    position: absolute;
+    width: 355px;
+    height: 20px;
+    left: 0px;
+    top: 0px;
+}
+
+p.prise12{
+    position: absolute;
+    width: 43px;
+    height: 20px;
+    left: 481px;
+    top: 0px;
+}
+
+div.line12{
+    position: absolute;
+    left: 0px;
+    top: 569px;
+}
+
+div.framePrice13{
+    position: absolute;
+    left: 0px;
+    top: 584px;
+}
+
+p.serName13{
+    position: absolute;
+    width: 128px;
+    height: 20px;
+    left: 0px;
+    top: 0px;
+}
+
+p.prise13{
+    position: absolute;
+    width: 50px;
+    height: 20px;
+    left: 474px;
+    top: 0px;
+}
+
+div.line13{
+    position: absolute;
+    left: 0px;
+    top: 619px;
+}
+
+div.framePrice14{
+    position: absolute;
+    left: 0px;
+    top: 634px;
+}
+
+p.serName14{
+    position: absolute;
+    width: 252px;
+    height: 20px;
+    left: 0px;
+    top: 0px;
+}
+
+p.prise14{
+    position: absolute;
+    width: 43px;
+    height: 20px;
+    left: 481px;
+    top: 0px;
+}
+
+div.line14{
+    position: absolute;
+    left: 0px;
+    top: 669px;
+}
+
+div.framePrice15{
+    position: absolute;
+    left: 0px;
+    top: 684px;
+}
+
+p.serName15{
+    position: absolute;
+    width: 105px;
+    height: 20px;
+    left: 0px;
+    top: 0px;
+}
+
+p.prise15{
+    position: absolute;
+    width: 41px;
+    height: 20px;
+    left: 483px;
+    top: 0px;
+}
+
+div.vkCommentsCom{
+    position: absolute;
+    width: 1063px;
+    height: 1012px;
+    left: 108px;
+    top: 1279px;
+    border: 1px solid #0000cc; /* hhhhhhhhhhhhhh*/
+}
+
+p.vkCommentsText{
+    position: absolute;
+    width: 356px;
+    height: 32px;
+    left: 0px;
+    top: -25px;
+
+    /* NEW / H3 */
+
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    /* identical to box height, or 133% */
+
+    /* NEW/Strong Coffee */
+
+    color: #351D0E;
+}
+
+div.vkComments{
+    position: absolute;
+    width: 1063px;
+    height: 968px;
+    left: 108px;
+    top: 1306px;
+    border: 1px solid #0000cc; /* hhhhhhhhhhhhhh*/
+}
+
+
+
