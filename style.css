@@ -213,6 +213,9 @@ body {
   #background_paw_3, #background_paw_4 {
     right: 11px;
   }
+  #background_paw_6, #background_paw_7 {
+    left: 20px;
+  }
   
 }
 .region_selector {
