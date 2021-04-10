@@ -380,6 +380,7 @@ body {
   font-weight: 16px;
   border: 0;
   border-radius: 8px 8px 0 0;
+  outline: none;
 }
 .date_button:focus {
   background-color: #F5F2F0;
@@ -387,6 +388,7 @@ body {
 .next_date {
   width: 32px;
   height: 32px;
+  outline: none;
 }
 .time_selector {
   background-color: #F5F2F0;
@@ -407,6 +409,7 @@ body {
   margin-left: 8px;
   border-radius: 8px;
   font-weight: bolder;
+  outline: none;
 }
 .load_more {
   display: flex;
@@ -421,6 +424,7 @@ body {
   width: 200px;
   height: 48px;
   margin-bottom: 46px;
+  outline: none;
 }
 .reg_success {
   font-family: Rubik;
@@ -444,6 +448,7 @@ body {
   right: 32px;
   width: 40px;
   height: 40px;
+  outline: none;
 }
 @media screen and (max-width: 900px) {
   .reg_success {
