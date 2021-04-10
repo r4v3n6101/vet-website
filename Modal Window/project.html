@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Запист на прием</title>
+    <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+    <a href="#okno">Вызвать всплывающее окно</a>
+
+    <input type="radio" name="jobtype" id="jt-webapp" />
+    <label class="lbl-jobtype" for="jt-webapp">WEB-APP</label>
+
+    <input type="radio" name="jobtype" id="jt-mobile" />
+    <label class="lbl-jobtype" for="jt-mobile">MOBILE</label>
+
+    <input type="radio" name="jobtype" id="jt-branding" />
+    <label class="lbl-jobtype" for="jt-branding">BRANDING</label>
+
+
+    <p class="text-for-jobtype" id="t-webapp">Text for WEB-APP</p>
+    <p class="text-for-jobtype" id="t-mobile">Text for MOBILE</p>
+    <p class="text-for-jobtype" id="t-branding">Text for BRANDING</p>
+
+    <div id="okno">
+        <div>
+            <p class="ui"> UI Kit </p>
+        </div>
+
+<!--        <div class="close"></div>-->
+
+
+
+
+        <form action="" method="GET">
+            <div>
+                <label class="normal"> Введите Ваш номер телефона
+                    <input class="inputNumber" type="tel" placeholder="Номер телефона"
+                       pattern="\+7\-[0-9]{3}\-[0-9]{3}\-[0-9]{2}\-[0-9]{2}" >  <br><br>
+                </label>
+                <label class="active"> Введите Ваше имя
+                    <input class="name" type="text" placeholder="Имя">
+                </label>
+                <div>
+                    <div class="time1">
+                        <p>10.00 - 12.00</p>
+                    </div>
+                    <input type="hidden" name="time" value="10.00-12.00">
+                    <input class="submit1" type="submit" value="Перезвоните мне" >
+                </div>
+                <div>
+                    <div class="time2">
+                        <p>12.00 - 14.00</p>
+                    </div>
+                    <input type="hidden" name="time" value="12.00-14.00">
+                    <input class="submit2" type="submit" value="Перезвоните мне" >
+                </div>
+                <div>
+                    <div class="time3">
+                        <p>14.00 - 16.00</p>
+                    </div>
+                    <input type="hidden" name="time" value="14.00-16.00">
+                    <input class="submit3" type="submit" value="Перезвоните мне" >
+                </div>
+                <p class="texxt"> text</p>
+            </div>
+        </form>
+        <div class="modalDialog">
+            <a href="#close" title="Закрыть" class="close"></a>
+        </div>
+    </div>
+</body>
+</html>
