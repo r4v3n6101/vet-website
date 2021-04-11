@@ -1078,3 +1078,9 @@ outline: none
         padding-left: 20px;
     }
 }
+
+.hidden-content div {
+    position: relative;
+    z-index: 2;
+    display: none;
+}
