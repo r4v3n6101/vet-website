@@ -1,21 +1,3 @@
-<!--
-Example data provided by server.js:
-{
-  "title": "Ветеринарная клиника",
-  "clinics": {
-    "image": "url to image or empty",
-    "name": "clinic's name",
-    "labour_time": "workday's time",
-    "rating": "rating",
-    "comments": "num of comments",
-    "rec_perc": "percentage of recommendation",
-    "phone": "phone of clinic",
-    "address": "address' str",
-    "description": "description",
-    "services": [{"service's name": "price"}, {"one more service": "price2"}]
-  }
-}
--->
 <body>
 
 <div class="rectangle_1">
@@ -106,7 +88,7 @@ Example data provided by server.js:
                     <div class="clinic_rating">
                         <img height="15" id="star" src="images/Star_1.svg" width="15">
                         <p class="rating">{{rating}}</p>
-                        <p class="number_of_reviews">{{comments}} отзывов</p>
+                        <p class="number_of_reviews">{{comments_num}} отзывов</p>
                     </div>
                 </div>
             </div>

@@ -1,6 +1,7 @@
-const path = require('path')
-const express = require('express')
-const exphbs = require('express-handlebars')
+const path = require('path'),
+    express = require('express'),
+    exphbs = require('express-handlebars'),
+    search_clinics = require('./lib/search')
 
 const app = express()
 
@@ -14,7 +15,9 @@ app.set('views', path.join(__dirname, 'views'))
 app.use(express.static('public'))
 
 app.get('/', (request, response) => {
-    response.render('index')
+    response.render('index', {
+        clinics: search_clinics(null, null, true)
+    })
 })
 
 app.listen(process.env.PORT)
