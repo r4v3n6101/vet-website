@@ -441,27 +441,40 @@ body {
     border: 0;
     border-radius: 8px 8px 0 0;
     outline: none;
+    position: relative;
+}
+.first_date_button {
+    width: 56px;
+    background-color: #FFFFFF;
+    border: 0;
+    border-radius: 8px 8px 0 0;
+    outline: none;
+    overflow: hidden;
+    margin-bottom: -10px;
 }
 
-.date_button:focus {
+.date_button:focus, .first_date_button:focus {
     background-color: #F5F2F0;
+    height: 72px;
 }
 
 .next_date {
     width: 32px;
     height: 32px;
     outline: none;
+    margin-left: 5px;
 }
 
 .time_selector {
     background-color: #F5F2F0;
     box-sizing: border-box;
+    position: relative;
     margin-top: 0;
     margin-bottom: 32px;
     width: 566px;
     height: 148px;
     padding: 14px;
-    border-radius: 16px;
+    border-radius: 0 16px 16px 16px;
 }
 
 .time_button {
@@ -470,10 +483,14 @@ body {
     width: 73px;
     height: 44px;
     margin-top: 12px;
-    margin-left: 8px;
+    margin-left: 7px;
     border-radius: 8px;
     font-weight: bolder;
     outline: none;
+}
+.time_button:focus {
+    background-color: #FC842D;
+    color: #FFFFFF;
 }
 
 .load_more {
@@ -525,4 +542,239 @@ body {
         width: 600px;
         padding-left: 20px;
     }
+}
+.modal_window {
+    width: 1280px;
+    height: 2450px;
+    background-color: #FFFFFF;
+    border-radius: 40px;
+    position: relative;
+    width: 1280px;
+    min-height: 2135px;
+    margin: 80px auto;
+    box-sizing: border-box;
+    padding: 40px 108px;
+}
+.modal_window_main {
+    display: flex;
+    flex-direction: row;
+}
+@media screen and (max-width: 900px) {
+    .modal_window {
+        width: 700px;
+        min-height: 4270px;
+    }
+    .modal_window_main {
+        flex-direction: column;
+    }
+}
+
+.frameGeo {
+    margin-top: 37px;
+    width: 484px;
+    height: 288px;
+}
+
+.map {
+    width: 484px;
+    height: 200px;
+}
+
+.clinic_contacts {
+    width: 430px;
+    height: 48px;
+    margin-top: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.clinic_tel_modal_bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 187px;
+    margin-top: 4px;
+}
+
+.clinic_adress_modal_bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 203px;
+    margin-top: 4px;
+}
+
+.clinic_tel_modal_top, .clinic_adress_modal_top {
+    margin-top: 0;
+    color: #88776B;
+}
+.clinic_tel_modal_bottom, .clinic_adress_modal_bottom {
+    margin-top: 4px;
+    height: 26px;
+
+}
+.adress_modal, .tel_number_modal {
+    font-size: 18px;
+}
+.modal_reg_header {
+    margin-top: 48px;
+    font-size: 24px;
+} 
+.modal_reg_text {
+    color: #88776B;
+    margin-top: 16px;
+}
+
+.modal_reg_date-time {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    font-size: 18px;
+    width: 430px;
+    height: 26px;
+}
+.modal_reg_date-time {
+    display: none;
+}
+
+.modal_reg_date-time_ref {
+    color: #FC842D;
+}
+
+.modal_reg_form {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+
+.reg_pole_modal {
+    margin-top: 12px;
+    width: 400px;
+    font-size: 16px;
+    height: 48px;
+    border-radius: 16px;
+    background-color: #FAF8F6;
+    outline: none;
+    border: 0;
+    box-sizing: border-box;
+    padding: 12px 16px;
+}
+.reg_problem_modal {
+    margin-top: 12px;
+    width: 400px;
+    height: 100px;
+    font-size: 16px;
+    border-radius: 16px;
+    background-color: #FAF8F6;
+    outline: none;
+    border: 0;
+    box-sizing: border-box;
+    padding: 12px 16px;
+    font-family: Rubik;
+}
+.reg_submit_modal {
+    width: 220px;
+    height: 48px;
+    border: none;
+    outline: none;
+    background-color: #FC842D;
+    color: #FFFFFF;
+    border-radius: 16px;
+    font-size: 16px;
+    margin-top: 16px;
+}
+#date-time_selector_modal {
+    width: 445px;
+    height: 284px;
+
+}
+#time_selector_modal {
+    width: 445px;
+    font-weight: normal;
+}
+.save_button {
+    width: 140px;
+    height: 48px;
+    border-radius: 16px;
+    border: none;
+    outline: none;
+    background-color: #FC842D;
+    color: #FFFFFF;
+    font-size: 16px;
+}
+.cancel_button {
+    width: 140px;
+    height: 48px;
+    border-radius: 16px;
+    border: 1px solid #E7E2E0;
+    outline: none;
+    background-color: #FFFFFF;
+    color: #351D0E;
+    font-size: 16px;
+    margin-left: 12px;
+}
+
+.modal_window_right {
+    width: 391px;
+    margin-left: 54px;
+}
+@media screen and (max-width: 900px) {
+    .modal_window_right {
+        margin-left: 0;
+    }
+}
+
+.clinic_services_modal {
+    margin-top: 104px;
+}
+
+.service_selector {
+    width: 463px;
+    margin: -7px
+}
+
+.service_button {
+    height: 40px;
+    border-radius: 8px;
+    border: 1px solid #E7E2E0;
+    background-color: #FFFFFF;
+    font-size: 16px;
+    margin-left: 8px;
+    margin-top: 12px;
+    outline: none;
+}
+.service_button:focus {
+    background-color: #FC842D;
+    color: #FFFFFF;
+    border: 0;
+}
+.services_list_modal {
+    width: 524px;
+    margin-top: 40px;
+}
+.services_list_item {
+    display: flex;
+    flex-direction: column;
+}
+.services_list_item_text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#modal_close_icon {
+    position: absolute;
+    top: 40px;
+    right: 48px;
+}
+.modal_reviews {
+    margin-top: 212px;
+}
+.vk_window {
+    overflow: hidden;
 }
