@@ -72,7 +72,7 @@
                 <p class="modal_reg_text">
                     На время и дату
                 </p>
-                <div class="modal_reg_date-time">
+                <div class="modal_reg_date-time">  <!--скрыто-->
                     <p class="modal_reg_date-time_text">
                         Понедельник, 8 марта, с 20:00 до 21,00
                     </p>
@@ -80,7 +80,7 @@
                 </div>
                 <div class="date-time_selector" id="date-time_selector_modal">
                     <form class="date_selector">
-                        <button type="button" class="date_button">Вт<br>9</button>  <!---->
+                        <button type="button" class="date_button">Вт<br>9</button>
                         <button type="button" class="date_button">Ср<br>10</button>
                         <button type="button" class="date_button" autofocus value="next">Чт<br>11</button>
                         <button type="button" class="date_button">Пт<br>12</button>
@@ -113,6 +113,45 @@
                     <input type="submit" class="reg_submit_modal" value="Записаться на приём">
 
                 </form>
+                <div class="reg_success_modal">   <!--скрыто, чтобы отобразить измени в style.css параметр display с none на flex-->
+                  <img id="reg_success_modal_paw" src="images/Paw.svg" width="40" height="40"> 
+                  <p class="reg_success_modal_header">Ваша заявка успешно принята</p>
+                  <p class="reg_success_modal_bottom">В течение 15 минут вам перезвонит специалист
+                    для уточнения данных</p>
+                    <form>
+                      <input type="image" src="images/close_icon_2.png" id="reg_success_modal_close_icon" 
+                      width="40" height="40">
+                    </form>
+                </div>
+
+                <div class="rating_window_1_of_2">  <!--скрыто, чтобы отобразить измени в style.css параметр display с none на flex-->
+                  <div class="count_block">
+                    <p class="count">1/2</p>
+                  </div>
+                  <p class="rating_window_header">Помогите нам с оценкой поликлиники</p>
+                  <p class="rating_window_bottom">Как вам эта поликлиника?</p>
+                  <div class="rating_window_stars">
+                    <img class="rating_window_single_star" src="images/Star_1.svg" width="32" height="32">
+                    <img class="rating_window_single_star" src="images/Star_1.svg" width="32" height="32">
+                    <img class="rating_window_single_star" src="images/Star_1.svg" width="32" height="32">
+                    <img class="rating_window_single_star" src="images/Star_1.svg" width="32" height="32">
+                    <img class="rating_window_single_star" src="images/Star_empty.svg" width="32" height="32"> 
+                  </div>
+                </div>
+
+                <div class="rating_window_2_of_2">  <!--скрыто-->
+                  <div class="count_block">
+                    <p class="count">2/2</p>
+                  </div>
+                  <p class="rating_window_header">Помогите нам с оценкой поликлиники</p>
+                  <p class="rating_window_bottom">Стали бы вы рекомендовать<br> эту поликлинику?</p>
+                  <form class="confirm_buttons">
+                    <input type="button" class="yes_button" value="Да">
+                    <input type="button" class="no_button" value="Нет">
+                  </form>
+
+                </div>
+
 
                 
             </div>
