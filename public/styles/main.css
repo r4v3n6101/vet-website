@@ -411,6 +411,7 @@ body {
 }
 
 .all_services {
+    display: flex;
     height: 48px;
     width: 120px;
     margin-left: 47px;
@@ -420,6 +421,9 @@ body {
     background-color: #FC842D;
     color: #FFFFFF;
     outline: none;
+    padding: 13px 17px 11px 17px;
+    box-sizing: border-box;
+    text-decoration: none;
 }
 
 .selector_text {
@@ -467,6 +471,8 @@ body {
 }
 
 .time_selector {
+    display: flex;
+    flex-wrap: wrap;
     background-color: #F5F2F0;
     box-sizing: border-box;
     position: relative;
@@ -479,6 +485,7 @@ body {
 }
 
 .time_button {
+    display: block;
     background-color: #FFFFFF;
     border: 0;
     width: 73px;
@@ -486,8 +493,15 @@ body {
     margin-top: 12px;
     margin-left: 7px;
     border-radius: 8px;
-    font-weight: bolder;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
     outline: none;
+    box-sizing: border-box;
+    padding-top: 12px;
+    padding-bottom: 8px;
+    text-decoration: none;
+    text-align: center;
 }
 
 .time_button:focus {
@@ -793,7 +807,7 @@ body {
     align-items: center;
 }
 
-#modal_close_icon {
+.close-modal {
     position: absolute;
     top: 40px;
     right: 48px;
