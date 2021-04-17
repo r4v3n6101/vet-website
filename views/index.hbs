@@ -1,4 +1,4 @@
-<body>
+<script src="scripts/main.js"></script>
 
 <div class="rectangle_1">
     <h3 class="rct1_top">Ветеринарный сервис</h3>
@@ -117,12 +117,10 @@
                         </div>
                     {{/each}}
                 </div>
-                <button class="all_services">Все услуги</button>
+                <a href="modal" class="all_services" data-modal>Все услуги</a>
             </div>
             <div class="product_card_right_bottom">
-                <p class="selector_text">
-                    Выберете день и время для записи на приём
-                </p>
+                <p class="selector_text">Выберете день и время для записи на приём</p>
                 <div class="date-time_selector">
                     <div class="date_selector">
                         <button class="date_button">Вт<br>9</button>
@@ -152,7 +150,6 @@
         </div>
     </div>
 {{/each}}
-
 <!--
 <div class="load_more">
     <button class="load_more_button">Загрузить еще</button>
@@ -174,5 +171,3 @@
     </form>
 </div>
 -->
-
-</body>

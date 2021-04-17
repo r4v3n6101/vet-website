@@ -20,4 +20,8 @@ app.get('/', (request, response) => {
     })
 })
 
+app.get('/modal', (request, response) => {
+    response.render('modal', search_clinics(null, null, false)[0])
+})
+
 app.listen(process.env.PORT)

@@ -443,6 +443,7 @@ body {
     outline: none;
     position: relative;
 }
+
 .first_date_button {
     width: 56px;
     background-color: #FFFFFF;
@@ -488,6 +489,7 @@ body {
     font-weight: bolder;
     outline: none;
 }
+
 .time_button:focus {
     background-color: #FC842D;
     color: #FFFFFF;
@@ -543,27 +545,30 @@ body {
         padding-left: 20px;
     }
 }
+
 .modal_window {
     width: 1280px;
     height: auto;
     background-color: #FFFFFF;
     border-radius: 40px;
     position: relative;
-    width: 1280px;
     min-height: 2135px;
     margin: 80px auto;
     box-sizing: border-box;
     padding: 40px 108px;
 }
+
 .modal_window_main {
     display: flex;
     flex-direction: row;
 }
+
 @media screen and (max-width: 900px) {
     .modal_window {
         width: 700px;
         height: auto;
     }
+
     .modal_window_main {
         flex-direction: column;
     }
@@ -598,7 +603,7 @@ body {
     margin-top: 4px;
 }
 
-.clinic_adress_modal_bottom {
+.clinic_address_modal_bottom {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -607,22 +612,26 @@ body {
     margin-top: 4px;
 }
 
-.clinic_tel_modal_top, .clinic_adress_modal_top {
+.clinic_tel_modal_top, .clinic_address_modal_top {
     margin-top: 0;
     color: #88776B;
 }
-.clinic_tel_modal_bottom, .clinic_adress_modal_bottom {
+
+.clinic_tel_modal_bottom, .clinic_address_modal_bottom {
     margin-top: 4px;
     height: 26px;
 
 }
-.adress_modal, .tel_number_modal {
+
+.address_modal, .tel_number_modal {
     font-size: 18px;
 }
+
 .modal_reg_header {
     margin-top: 48px;
     font-size: 24px;
-} 
+}
+
 .modal_reg_text {
     color: #88776B;
     margin-top: 16px;
@@ -637,6 +646,7 @@ body {
     width: 430px;
     height: 26px;
 }
+
 .modal_reg_date-time {
     display: none;
 }
@@ -664,6 +674,7 @@ body {
     box-sizing: border-box;
     padding: 12px 16px;
 }
+
 .reg_problem_modal {
     margin-top: 12px;
     width: 400px;
@@ -675,8 +686,9 @@ body {
     border: 0;
     box-sizing: border-box;
     padding: 12px 16px;
-    font-family: Rubik;
+    font-family: Rubik, serif;
 }
+
 .reg_submit_modal {
     width: 220px;
     height: 48px;
@@ -688,15 +700,18 @@ body {
     font-size: 16px;
     margin-top: 16px;
 }
+
 #date-time_selector_modal {
     width: 445px;
     height: 284px;
 
 }
+
 #time_selector_modal {
     width: 445px;
     font-weight: normal;
 }
+
 .save_button {
     width: 140px;
     height: 48px;
@@ -707,6 +722,7 @@ body {
     color: #FFFFFF;
     font-size: 16px;
 }
+
 .cancel_button {
     width: 140px;
     height: 48px;
@@ -723,6 +739,7 @@ body {
     width: 391px;
     margin-left: 54px;
 }
+
 @media screen and (max-width: 900px) {
     .modal_window_right {
         margin-left: 0;
@@ -748,39 +765,48 @@ body {
     margin-top: 12px;
     outline: none;
 }
+
 .service_button:focus {
     background-color: #FC842D;
     color: #FFFFFF;
     border: 0;
 }
+
 .services_list_modal {
     width: 524px;
     margin-top: 40px;
 }
+
 .services_list_item {
     display: flex;
     flex-direction: column;
 }
+
 .services_list_line {
     margin-left: 0;
 }
+
 .services_list_item_text {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
+
 #modal_close_icon {
     position: absolute;
     top: 40px;
     right: 48px;
 }
+
 .modal_reviews {
     margin-top: 48px;
 }
+
 .vk_window {
     overflow: hidden;
 }
+
 .reg_success_modal {
     display: flex;
     justify-content: center;
@@ -795,24 +821,29 @@ body {
     text-align: center;
     padding: 16px 60px;
 }
+
 #reg_success_modal_paw {
     margin-top: 16px;
     align-self: center;
 }
+
 .reg_success_modal_header {
     font-size: 18px;
     margin-top: 8px;
     margin-bottom: -6px;
 }
+
 .reg_success_modal_bottom {
     color: #88776B;
     margin-bottom: 20px;
 }
+
 #reg_success_modal_close_icon {
     position: absolute;
     top: 16px;
     right: 16px;
 }
+
 .rating_window_1_of_2 {
     display: flex;
     width: 457px;
@@ -825,6 +856,7 @@ body {
     flex-direction: column;
     margin-top: 24px;
 }
+
 .count_block {
     display: flex;
     margin-top: 20px;
@@ -838,19 +870,23 @@ body {
     width: 44px;
     height: 32px;
 }
+
 .count {
     margin: 6px 6px 2px 6px;
 }
+
 .rating_window_header {
     color: #88776B;
     margin-top: 12px;
     margin-bottom: 0;
 }
+
 .rating_window_bottom {
     font-weight: bold;
     font-size: 18px;
     margin-top: 3px;
 }
+
 .rating_window_stars {
     display: flex;
     flex-direction: row;
@@ -858,8 +894,9 @@ body {
     width: 184px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 24px;  
+    margin-bottom: 24px;
 }
+
 .rating_window_2_of_2 {
     display: flex;
     width: 457px;
@@ -872,9 +909,11 @@ body {
     flex-direction: column;
     margin-top: 24px;
 }
+
 .confirm_buttons {
     margin-bottom: 24px;
 }
+
 .yes_button {
     width: 80px;
     height: 48px;
@@ -884,6 +923,7 @@ body {
     outline: none;
     border: none;
 }
+
 .no_button {
     width: 80px;
     height: 48px;
