@@ -38,19 +38,27 @@
     <div class="rct4_content">
         <h3 class="rct4_header">Не знаете что с вашим питомцем?</h3>
         <p class="rct4_gray_text">Наши специалисты помогут разобраться</p>
-        <p>Оставьте заявку на бесплатную видео-консультацию <br> с нашими специалистами</p>
-        <div class="rct4_attention">
-            <img class="attention_logo" height="28" src="images/Attention.svg" width="28">
-            <p class="attention_text">У вас должен быть аккаунт в WhatsApp или Viber</p>
+        <p class="rct4_text_bottom">Оставьте заявку на бесплатную консультацию <br> с нашими специалистами</p>
+        <p class="rct4_messenger_selector_text">Выберите удобный для Вас мессенджер:</p>
+        <div class="messenger_selector">
+            <input type="radio" name="messenger" value="telegram">
+            <img class="messenger_icon" src="images/Telegram_icon.png">
+            <p class="messenger_name">Telegram</p>
+            <input type="radio" name="messenger" value="whatsapp">
+            <img class="messenger_icon" src="images/Whatsapp_icon.png">
+            <p class="messenger_name">WhatsApp</p>
+            <input type="radio" name="messenger" value="viber">
+            <img class="messenger_icon" src="images/Viber_icon.png">
+            <p class="messenger_name">Viber</p>
         </div>
         <form class="registration">
             <input class="reg_pole" id="reg_name" placeholder="Ваше имя" type="text">
             <input class="reg_pole" id="reg_tel" placeholder="Ваш номер телефона" type="tel">
-            <input class="reg_pole" id="reg_submit" type="submit" value="Перезвоните мне">
+            <input class="reg_pole" id="reg_submit" type="submit" value="Напишите мне">
         </form>
     </div>
 
-    <img height="438" id="Dog" src="images/Dog.png" width="559">
+    <img height="363" id="Dog" src="images/Dog.png" width="464">
     <form>
         <input id="rct4_close_button" src="images/close_icon.png" type="image">
     </form>
@@ -77,6 +85,7 @@
 
 {{#each clinics}}
     <div class="product_card">
+        <img class="product_card_vertical_line" src="images/Line_10.svg">
         <div class="product_card_left">
             <div class="card_info">
                 <img class="clinic_logo"
@@ -108,6 +117,7 @@
         </div>
 
         <div class="product_card_right">
+            <img class="product_card_horizontal_line" src="images/Line_11.svg">
             <div class="product_card_right_top">
                 <div class="price_list">
                     {{#each services}}
@@ -149,6 +159,7 @@
             </div>
         </div>
     </div>
+    <div class="product_card" id="bbq">some content 1/5<br>some content 2/5<br>some content 3/5<br>some content 4/5<br>some content 5/5</div>
 {{/each}}
 <!--
 <div class="load_more">
