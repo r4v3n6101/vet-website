@@ -26,7 +26,7 @@ body {
 
 .rct1_bottom {
     display: block;
-    width:1240px;
+    width: 1240px;
     margin: 10px auto;
     font-size: 16px;
     line-height: 24px;
@@ -102,23 +102,28 @@ body {
     top: 202px;
     right: 35px;
 }
+
 @media screen and (max-width: 1280px) and (min-width: 901px) {
     .vector_1 {
         width: 855px;
     }
+
     .cat {
         width: 385px;
         height: 315px;
     }
+
     .frame_132 {
         font-size: 15px;
     }
+
     #background_paw_2 {
         right: -10px;
         width: 90px;
         height: 90px;
     }
 }
+
 .rectangle_4 {
     display: flex;
     justify-content: space-around;
@@ -161,6 +166,7 @@ body {
     line-height: 32px;
     color: #FC842D;
 }
+
 .rct4_text_bottom {
     font-size: 14px;
 }
@@ -173,28 +179,34 @@ body {
 .rct4_messenger_selector_text {
     font-size: 14px;
 }
+
 .messenger_selector {
     display: flex;
     align-items: center;
     margin-bottom: 15px;
     margin-right: 15px;
 }
+
 .messenger_icon {
     width: 25px;
     height: 25px;
 }
+
 .messenger_name {
     margin-right: 15px;
     font-size: 15px;
 }
+
 @media screen and (max-width: 1280px) and (min-width: 901px) {
     .messenger_name {
         font-size: 13px;
     }
+
     .messenger_selector {
         margin-bottom: 7px;
     }
 }
+
 .registration {
     display: flex;
     flex-direction: column;
@@ -277,58 +289,71 @@ body {
         height: 358px;
         padding: 25px;
     }
+
     .rct4_content {
         max-width: 400px;
         margin-left: 40px;
         margin-top: -20px;
     }
+
     .rct4_header {
         font-size: 17px;
         margin-bottom: 15px;
     }
+
     .rct4_text_bottom {
         font-size: 12px;
     }
+
     .rct4_gray_text {
         font-size: 12px;
     }
+
     .rct4_attention {
         width: 348px;
         font-size: 13px;
         margin-bottom: 21px;
     }
+
     #reg_name, #reg_tel {
         margin-bottom: 8px;
         height: 17px;
         font-size: 14px;
     }
+
     #Dog {
         height: 301px;
         width: 385px;
         margin-top: 65px;
     }
+
     #background_paw_7 {
         left: 20px;
         width: 35px;
         height: 35px;
     }
+
     #background_paw_6 {
         left: 10px;
         width: 35px;
         height: 35px;
     }
+
     #background_paw_3 {
         top: 185px;
         right: 40px;
     }
+
     #background_paw_4 {
         top: 240px;
         right: 50px;
     }
+
     #background_paw_5 {
         top: 280px;
     }
 }
+
 @media screen and (max-width: 900px) {
     #background_paw_3, #background_paw_4 {
         right: 11px;
@@ -378,11 +403,13 @@ body {
     background: #FC842D;
     color: #FFFFFF;
 }
+
 @media screen and (max-width: 1280px) and (min-width: 901px) {
     .region_selector {
         width: 855px;
     }
 }
+
 .product_card {
     box-sizing: border-box;
     display: flex;
@@ -396,17 +423,20 @@ body {
     margin: 50px auto 0 auto;
     padding: 35px 20px 20px 20px;
 }
+
 .product_card_vertical_line {
     position: absolute;
     height: 100%;
     right: 515px;
     top: 0;
 }
+
 @media screen and (max-width: 1280px) and (min-width: 901px) {
     .product_card {
         width: 855px;
         padding: 35px 20px 20px 20px;
     }
+
     .product_card_vertical_line {
         right: 460px;
     }
@@ -419,6 +449,7 @@ body {
         width: 620px;
         height: auto;
     }
+
     .product_card_vertical_line {
         display: none;
     }
@@ -496,39 +527,47 @@ body {
     font-size: 16px;
     line-height: 24px;
 }
+
 @media screen and (max-width: 1280px) and (min-width: 901px) {
     .recommendations {
         margin-top: 17px;
         font-size: 15px;
         padding: 0 10px;
     }
+
     .clinic_tel {
         margin-top: 17px;
         font-size: 15px;
         max-width: 170px;
     }
+
     .clinic_location {
         font-size: 15px;
     }
+
     .clinic_description {
         margin-top: 13px;
         font-size: 15px;
     }
 }
+
 .product_card_right {
     position: relative;
 }
+
 .product_card_horizontal_line {
     position: absolute;
     right: 0;
     top: 125px;
     width: 105%;
 }
+
 @media screen and (max-width: 900px) {
     .product_card_horizontal_line {
         display: none;
     }
 }
+
 .product_card_right_top {
     display: flex;
     justify-content: space-between;
@@ -569,16 +608,20 @@ body {
     text-decoration: none;
     transform: translateX(-30px);
 }
+
 @media screen and (max-width: 1280px) and (min-width: 901px) {
     .price_list {
         width: 249px;
     }
+
     .service {
         width: 249px;
     }
+
     .all_services {
         transform: translateX(-30px);
     }
+
     .all_services {
         height: 40px;
         width: 100px;
@@ -667,16 +710,19 @@ body {
     background-color: #FC842D;
     color: #FFFFFF;
 }
+
 @media screen and (max-width: 1280px) and (min-width: 901px) {
     .selector_text {
         font-size: 16px;
         margin-top: 17px;
     }
+
     .time_button {
         width: 54px;
         height: 32px;
         font-size: 13px;
     }
+
     .time_selector {
         width: 390px;
         height: 108px;
@@ -746,12 +792,14 @@ body {
     box-sizing: border-box;
     padding: 40px 108px;
 }
+
 @media screen and (max-width: 1280px) and (min-width: 901px) {
     .modal_window {
         width: 1062px;
         padding: 33px 89px;
     }
 }
+
 .modal_window_main {
     display: flex;
     flex-direction: row;
@@ -778,17 +826,20 @@ body {
     width: 484px;
     height: 200px;
 }
+
 @media screen and (max-width: 1280px) and (min-width: 901px) {
     .frameGeo {
         margin-top: 37px;
         width: 401px;
         height: 239px;
     }
+
     .map {
         width: 401px;
         height: 166px;
     }
 }
+
 .clinic_contacts {
     width: 430px;
     height: 48px;
@@ -1002,14 +1053,17 @@ body {
     justify-content: space-between;
     align-items: center;
 }
+
 @media screen and (max-width: 1280px) and (min-width: 901px) {
     .services_list_modal {
         width: 435px;
     }
+
     .services_list_line {
         width: 400px;
     }
 }
+
 .close-modal {
     position: absolute;
     top: 40px;
@@ -1023,12 +1077,14 @@ body {
 .vk_window {
     overflow: hidden;
 }
+
 @media screen and (max-width: 1280px) and (min-width: 901px) {
     .vk_window {
         width: 882px;
         height: 747px;
     }
 }
+
 .reg_success_modal {
     display: flex;
     justify-content: center;
@@ -1155,6 +1211,7 @@ body {
     outline: none;
     color: #351D0E;
 }
+
 #bbq {
     font-size: 60px;
     height: 431px;
