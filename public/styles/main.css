@@ -388,6 +388,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
+    text-align: center;
 }
 
 .region_button label {
@@ -396,7 +397,7 @@ body {
     background: #FFFFFF;
     margin-left: 10px;
     border-radius: 21px;
-    padding: 13px 20px;
+    padding-top: 13px;
     box-sizing: border-box;
     width: 153px;
     height: 44px;
