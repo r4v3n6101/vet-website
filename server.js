@@ -22,9 +22,9 @@ app.get('/api/search', (request, response) => {
     ))
 })
 
-app.get('/', (request, response) => {
-    response.render('index', {
-        clinics: api.search(null, null, true)
+app.get('/catalog', (request, response) => {
+    response.render('catalog', {
+        clinics: api.search(null, request.query['region'], true)
     })
 })
 
@@ -32,4 +32,7 @@ app.get('/modal', (request, response) => {
     response.render('modal', api.search(null, null, false)[0])
 })
 
+app.get('/', (request, response) => {
+    response.render('index')
+})
 app.listen(process.env.PORT)

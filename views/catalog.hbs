@@ -1,0 +1,102 @@
+<script src="scripts/modal.js"></script>
+{{#each clinics}}
+    <div class="product_card">
+        <img class="product_card_vertical_line" src="images/Line_10.svg">
+        <div class="product_card_left">
+            <div class="card_info">
+                <img class="clinic_logo"
+                     width="96" height="96"
+                     src="{{#if image}} {{image}} {{else}} images/image_filler.svg {{/if}}">
+                <div>
+                    <h3 class="clinic_name">{{name}}</h3>
+                    <p class="clinic_working_hours">Сегодня работают до {{labour_time}}</p>
+                    <div class="clinic_rating">
+                        <img height="15" id="star" src="images/Star_1.svg" width="15">
+                        <p class="rating">{{rating}}</p>
+                        <p class="number_of_reviews">{{comments_num}} отзывов</p>
+                    </div>
+                </div>
+            </div>
+            <div class="recommendations">
+                <img height="16" id="Paw" src="images/Paw.svg" width="20">
+                <p class="rec_text">{{rec_perc}}% пользователей рекомендуют клинику</p>
+            </div>
+            <div class="clinic_tel">
+                <img class="call_icon" height="20" src="images/Call.svg" width="20">
+                <p class="tel_number">{{phone}}</p>
+            </div>
+            <div class="clinic_location">
+                <img class="location_icon" height="20" src="images/Location.svg" width="17">
+                <p class="address">{{address}}</p>
+            </div>
+            <p class="clinic_description">{{description}}</p>
+        </div>
+
+        <div class="product_card_right">
+            <img class="product_card_horizontal_line" src="images/Line_11.svg">
+            <div class="product_card_right_top">
+                <div class="price_list">
+                    {{#each services}}
+                        <div class="service">
+                            <p class="name_of_service">{{@key}}</p>
+                            <p class="price">{{this}}</p>
+                        </div>
+                    {{/each}}
+                </div>
+                <a href="modal" class="all_services" data-modal>Все услуги</a>
+            </div>
+            <div class="product_card_right_bottom">
+                <p class="selector_text">Выберете день и время для записи на приём</p>
+                <div class="date-time_selector">
+                    <div class="date_selector">
+                        <!-- TODO: make it all `a` element so they're all just references, not buttons  -->
+                        <button class="date_button">Вт<br>9</button>
+                        <button class="date_button">Ср<br>10</button>
+                        <button autofocus class="date_button" value="next">Чт<br>11</button>
+                        <button class="date_button">Пт<br>12</button>
+                        <button class="date_button">Сб<br>13</button>
+                        <button class="date_button">Вс<br>14</button>
+                        <button class="date_button">Пн<br>15</button>
+                        <a href="modal" class="next_date" data-modal>
+                            <img src="images/Frame_133.svg">
+                        </a>
+                    </div>
+                    <div class="time_selector">
+                        <a href="modal" class="time_button" data-modal>10:00</a>
+                        <a href="modal" class="time_button" data-modal>11:00</a>
+                        <a href="modal" class="time_button" data-modal>12:00</a>
+                        <a href="modal" class="time_button" data-modal>13:00</a>
+                        <a href="modal" class="time_button" data-modal>14:00</a>
+                        <a href="modal" class="time_button" data-modal>15:00</a>
+                        <a href="modal" class="time_button" data-modal>16:00</a>
+                        <a href="modal" class="time_button" data-modal>17:00</a>
+                        <a href="modal" class="time_button" data-modal>18:00</a>
+                        <a href="modal" class="time_button" data-modal>19:00</a>
+                        <a href="modal" class="time_button" data-modal>20:00</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{{/each}}
+<!--
+<div class="load_more">
+    <button class="load_more_button">Загрузить еще</button>
+</div>
+ <div class="reg_success" >
+    <img class="reg_success_paw" height="53"
+         src="public/images/Paw.svg"
+         width="66.5">
+    <div class="reg_success_text">
+        <h3 class="reg_success_text_header">
+            Вы успешно записались на консультацию
+        </h3>
+        <p class="reg_success_text_bottom">
+            В течение 10 минут наш специалист перезвонит вам
+        </p>
+    </div>
+    <form>
+        <input id="reg_success  _close_button" src="images/close_icon.png" type="image">
+    </form>
+</div>
+-->
