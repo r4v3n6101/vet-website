@@ -182,6 +182,7 @@ body {
 
 .messenger_selector {
     display: flex;
+    cursor: pointer;
     align-items: center;
     margin-bottom: 15px;
     margin-right: 15px;
@@ -387,19 +388,27 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
+    text-align: center;
 }
 
-.region_button {
+.region_button label {
+    display: inline-block;
+    cursor: pointer;
     background: #FFFFFF;
     margin-left: 10px;
     border-radius: 21px;
+    padding-top: 13px;
+    box-sizing: border-box;
     width: 153px;
     height: 44px;
     border: 0;
     outline: none;
 }
+.region_button input[type=radio] {
+    display: none;
+}
 
-.region_button:focus {
+.region_button input[type=radio]:checked + label {
     background: #FC842D;
     color: #FFFFFF;
 }
@@ -1210,10 +1219,5 @@ body {
     background-color: #FFFFFF;
     outline: none;
     color: #351D0E;
-}
-
-#bbq {
-    font-size: 60px;
-    height: 431px;
 }
 
