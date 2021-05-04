@@ -2,6 +2,7 @@
   {
     "name": "Test name",
     "image": "",
+    "region": "Central",
     "labour_time": "20:00",
     "rating": 95,
     "comments_num": 12,

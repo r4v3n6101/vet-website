@@ -16,7 +16,6 @@ app.use(express.static('public'))
 
 app.get('/api/search', (request, response) => {
     response.send(api.getClinics(
-        request.query['name'],
         request.query['region'],
         request.query['preview'] === '1',
     ))
@@ -24,15 +23,16 @@ app.get('/api/search', (request, response) => {
 
 app.get('/catalog', (request, response) => {
     response.render('catalog', {
-        clinics: api.getClinics(null, request.query['region'], true)
+        clinics: api.getClinics(request.query['region'], true)
     })
 })
 
 app.get('/modal', (request, response) => {
-    response.render('modal', api.getClinics(null, null, false)[0])
+    response.render('modal', api.getClinics(null, false)[0])
 })
 
 app.get('/', (request, response) => {
     response.render('index')
 })
+
 app.listen(process.env.PORT)

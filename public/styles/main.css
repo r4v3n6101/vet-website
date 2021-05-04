@@ -404,6 +404,7 @@ body {
     border: 0;
     outline: none;
 }
+
 .region_button input[type=radio] {
     display: none;
 }
