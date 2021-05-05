@@ -36,12 +36,14 @@
             <img class="product_card_horizontal_line" src="images/Line_11.svg">
             <div class="product_card_right_top">
                 <div class="price_list">
-                    {{#each services}}
-                        <div class="service">
-                            <p class="name_of_service">{{@key}}</p>
-                            <p class="price">{{this}}</p>
-                        </div>
-                    {{/each}}
+                    {{#preview services 3}}
+                        {{#each this}}
+                            <div class="service">
+                                <p class="name_of_service">{{@key}}</p>
+                                <p class="price">{{this}}</p>
+                            </div>
+                        {{/each}}
+                    {{/preview}}
                 </div>
                 <a href="modal?name={{name}}" class="all_services" data-modal>Все услуги</a>
             </div>

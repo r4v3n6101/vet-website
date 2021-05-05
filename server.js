@@ -25,14 +25,18 @@ app.get('/api/search', (request, response) => {
 
 app.get('/catalog', (request, response) => {
     response.render('catalog', {
-        clinics: api.getClinics(null, request.query['region'], true),
+        clinics: api.getClinics(null, request.query['region']),
+        helpers: {
+            preview:
+                (data, idx, options) => options.fn(Object.fromEntries(Object.entries(data).slice(0, idx)))
+        },
         layout: false
     })
 })
 
 app.get('/modal', (request, response) => {
     response.render('modal', {
-        data: api.getClinics(request.query['name'], null, false)[0],
+        data: api.getClinics(request.query['name'], null)[0],
         layout: false
     })
 })
