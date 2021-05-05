@@ -1,149 +1,151 @@
-<div class="modal_window_main">
-    <div class="modal_window_left">
-        <div class="card_info">
-            <img class="clinic_logo" height="72"
-                 src="{{#if image}} {{image}} {{else}} images/image_filler.svg {{/if}}" width="72">
-            <div>
-                <h3 class="clinic_name">{{name}}</h3>
-                <div class="clinic_rating">
-                    <img height="24" id="star" src="images/Star_1.svg" width="24">
-                    <p class="rating">{{rating}}</p>
-                    <p class="number_of_reviews">{{comments_num}} отзывов</p>
+{{#with data}}
+    <div class="modal_window_main">
+        <div class="modal_window_left">
+            <div class="card_info">
+                <img class="clinic_logo" height="72"
+                     src="{{#if image}} {{image}} {{else}} images/image_filler.svg {{/if}}" width="72">
+                <div>
+                    <h3 class="clinic_name">{{name}}</h3>
+                    <div class="clinic_rating">
+                        <img height="24" id="star" src="images/Star_1.svg" width="24">
+                        <p class="rating">{{rating}}</p>
+                        <p class="number_of_reviews">{{comments_num}} отзывов</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="frameGeo">
-            <iframe class="map" frameborder="0" src="https://yandex.ru/map-widget/v1/?um=constructor%3Ade7217d7a881fc3b4a116f34
+            <div class="frameGeo">
+                <iframe class="map" frameborder="0" src="https://yandex.ru/map-widget/v1/?um=constructor%3Ade7217d7a881fc3b4a116f34
                     f26b3bea195580ceaaee71a61eda8d96e468057d&amp;source=constructor">
-            </iframe>
-            <div class="clinic_contacts">
-                <div class="clinic_tel_modal">
-                    <p class="clinic_tel_modal_top">Телефон для записи</p>
-                    <div class="clinic_tel_modal_bottom">
-                        <img class="call_icon" height="20" src="images/Call.svg" width="20">
-                        <p class="tel_number_modal">{{phone}}</p>
+                </iframe>
+                <div class="clinic_contacts">
+                    <div class="clinic_tel_modal">
+                        <p class="clinic_tel_modal_top">Телефон для записи</p>
+                        <div class="clinic_tel_modal_bottom">
+                            <img class="call_icon" height="20" src="images/Call.svg" width="20">
+                            <p class="tel_number_modal">{{phone}}</p>
+                        </div>
+                    </div>
+                    <div class="clinic_address_modal">
+                        <p class="clinic_address_modal_top">Адрес вет.клиники</p>
+                        <div class="clinic_address_modal_bottom">
+                            <img class="location_icon" src="images/Location.svg" width="17" height="20">
+                            <p class="address_modal">{{address}}</p>
+                        </div>
                     </div>
                 </div>
-                <div class="clinic_address_modal">
-                    <p class="clinic_address_modal_top">Адрес вет.клиники</p>
-                    <div class="clinic_address_modal_bottom">
-                        <img class="location_icon" src="images/Location.svg" width="17" height="20">
-                        <p class="address_modal">{{address}}</p>
+            </div>
+            <div class="modal_registration">
+                <h3 class="modal_reg_header">Запись на приём</h3>
+                <p class="modal_reg_text">На время и дату</p>
+                <div class="modal_reg_date-time">  <!--скрыто-->
+                    <p class="modal_reg_date-time_text">Понедельник, 8 марта, с 20:00 до 21,00</p>
+                    <a class="modal_reg_date-time_ref" href="https://google.com">Изменить</a>
+                </div>
+                <div class="date-time_selector" id="date-time_selector_modal">
+                    <form class="date_selector">
+                        <button type="button" class="date_button">Вт<br>9</button>
+                        <button type="button" class="date_button">Ср<br>10</button>
+                        <button type="button" class="date_button" autofocus value="next">Чт<br>11</button>
+                        <button type="button" class="date_button">Пт<br>12</button>
+                        <button type="button" class="date_button">Сб<br>13</button>
+                        <button type="button" class="date_button">Вс<br>14</button>
+                        <button type="button" class="date_button">Пн<br>15</button>
+                        <input type="image" class="next_date" src="images/Frame_133.svg">
+                    </form>
+                    <form class="time_selector" id="time_selector_modal">
+                        <button type="button" class="time_button" autofocus value="next">10:00</button>
+                        <button type="button" class="time_button">11:00</button>
+                        <button type="button" class="time_button">12:00</button>
+                        <button type="button" class="time_button">13:00</button>
+                        <button type="button" class="time_button">14:00</button>
+                        <button type="button" class="time_button">16:00</button>
+                        <button type="button" class="time_button">17:00</button>
+                        <button type="button" class="time_button">18:00</button>
+                        <button type="button" class="time_button">19:00</button>
+                    </form>
+                    <form class="date-time_selector_buttons">
+                        <input type="button" class="save_button" value="Сохранить">
+                        <input type="button" class="cancel_button" value="Отмена">
+                    </form>
+                </div>
+                <form class="modal_reg_form">
+                    <input type="text" id="reg_name_modal" class="reg_pole_modal" placeholder="Ваше имя">
+                    <input type="tel" id="reg_tel_modal" class="reg_pole_modal" placeholder="+ 7 (9__) ___-__-__">
+                    <input type="text" id="reg_animal_type_modal" class="reg_pole_modal" placeholder="Вид животного">
+                    <textarea class="reg_problem_modal" id="reg_problem_modal"
+                              placeholder="Описание проблемы"></textarea>
+                    <input type="submit" class="reg_submit_modal" value="Записаться на приём">
+                </form>
+                <div class="reg_success_modal">
+                    <!--скрыто, чтобы отобразить измени в style.css параметр display с none на flex-->
+                    <img height="40" id="reg_success_modal_paw" src="images/Paw.svg" width="40">
+                    <p class="reg_success_modal_header">Ваша заявка успешно принята</p>
+                    <p class="reg_success_modal_bottom">В течение 15 минут вам перезвонит специалист
+                        для уточнения данных</p>
+                    <form>
+                        <input height="40" id="reg_success_modal_close_icon" src="images/close_icon_2.png"
+                               type="image" width="40">
+                    </form>
+                </div>
+                <div class="rating_window_1_of_2">
+                    <!--скрыто, чтобы отобразить измени в style.css параметр display с none на flex-->
+                    <div class="count_block">
+                        <p class="count">1/2</p>
                     </div>
+                    <p class="rating_window_header">Помогите нам с оценкой поликлиники</p>
+                    <p class="rating_window_bottom">Как вам эта поликлиника?</p>
+                    <div class="rating_window_stars">
+                        <img class="rating_window_single_star" height="32" src="images/Star_1.svg" width="32">
+                        <img class="rating_window_single_star" height="32" src="images/Star_1.svg" width="32">
+                        <img class="rating_window_single_star" height="32" src="images/Star_1.svg" width="32">
+                        <img class="rating_window_single_star" height="32" src="images/Star_1.svg" width="32">
+                        <img class="rating_window_single_star" height="32" src="images/Star_empty.svg" width="32">
+                    </div>
+                </div>
+                <div class="rating_window_2_of_2">  <!--скрыто-->
+                    <div class="count_block">
+                        <p class="count">2/2</p>
+                    </div>
+                    <p class="rating_window_header">Помогите нам с оценкой поликлиники</p>
+                    <p class="rating_window_bottom">Стали бы вы рекомендовать<br> эту поликлинику?</p>
+                    <form class="confirm_buttons">
+                        <input class="yes_button" type="button" value="Да">
+                        <input class="no_button" type="button" value="Нет">
+                    </form>
                 </div>
             </div>
         </div>
-        <div class="modal_registration">
-            <h3 class="modal_reg_header">Запись на приём</h3>
-            <p class="modal_reg_text">На время и дату</p>
-            <div class="modal_reg_date-time">  <!--скрыто-->
-                <p class="modal_reg_date-time_text">Понедельник, 8 марта, с 20:00 до 21,00</p>
-                <a class="modal_reg_date-time_ref" href="https://google.com">Изменить</a>
+        <div class="modal_window_right">
+            <div class="clinic_services_modal">
+                <h3 class="services_modal_header">Услуги вет. клиники</h3>
+                <!--<div class="service_selector">
+                    <button type="button" class="service_button" autofocus value="next">Общее</button>
+                    <button type="button" class="service_button">Диагностика</button>
+                    <button type="button" class="service_button">Вакцинация</button>
+                    <button type="button" class="service_button">Манипуляции</button>
+                    <button type="button" class="service_button">Репродукции</button>
+                    <button type="button" class="service_button">Операции</button>
+                    <button class="service_button" type="button">Груминг</button>
+                </div> -->
             </div>
-            <div class="date-time_selector" id="date-time_selector_modal">
-                <form class="date_selector">
-                    <button type="button" class="date_button">Вт<br>9</button>
-                    <button type="button" class="date_button">Ср<br>10</button>
-                    <button type="button" class="date_button" autofocus value="next">Чт<br>11</button>
-                    <button type="button" class="date_button">Пт<br>12</button>
-                    <button type="button" class="date_button">Сб<br>13</button>
-                    <button type="button" class="date_button">Вс<br>14</button>
-                    <button type="button" class="date_button">Пн<br>15</button>
-                    <input type="image" class="next_date" src="images/Frame_133.svg">
-                </form>
-                <form class="time_selector" id="time_selector_modal">
-                    <button type="button" class="time_button" autofocus value="next">10:00</button>
-                    <button type="button" class="time_button">11:00</button>
-                    <button type="button" class="time_button">12:00</button>
-                    <button type="button" class="time_button">13:00</button>
-                    <button type="button" class="time_button">14:00</button>
-                    <button type="button" class="time_button">16:00</button>
-                    <button type="button" class="time_button">17:00</button>
-                    <button type="button" class="time_button">18:00</button>
-                    <button type="button" class="time_button">19:00</button>
-                </form>
-                <form class="date-time_selector_buttons">
-                    <input type="button" class="save_button" value="Сохранить">
-                    <input type="button" class="cancel_button" value="Отмена">
-                </form>
-            </div>
-            <form class="modal_reg_form">
-                <input type="text" id="reg_name_modal" class="reg_pole_modal" placeholder="Ваше имя">
-                <input type="tel" id="reg_tel_modal" class="reg_pole_modal" placeholder="+ 7 (9__) ___-__-__">
-                <input type="text" id="reg_animal_type_modal" class="reg_pole_modal" placeholder="Вид животного">
-                <textarea class="reg_problem_modal" id="reg_problem_modal"
-                          placeholder="Описание проблемы"></textarea>
-                <input type="submit" class="reg_submit_modal" value="Записаться на приём">
-            </form>
-            <div class="reg_success_modal">
-                <!--скрыто, чтобы отобразить измени в style.css параметр display с none на flex-->
-                <img height="40" id="reg_success_modal_paw" src="images/Paw.svg" width="40">
-                <p class="reg_success_modal_header">Ваша заявка успешно принята</p>
-                <p class="reg_success_modal_bottom">В течение 15 минут вам перезвонит специалист
-                    для уточнения данных</p>
-                <form>
-                    <input height="40" id="reg_success_modal_close_icon" src="images/close_icon_2.png"
-                           type="image" width="40">
-                </form>
-            </div>
-            <div class="rating_window_1_of_2">
-                <!--скрыто, чтобы отобразить измени в style.css параметр display с none на flex-->
-                <div class="count_block">
-                    <p class="count">1/2</p>
-                </div>
-                <p class="rating_window_header">Помогите нам с оценкой поликлиники</p>
-                <p class="rating_window_bottom">Как вам эта поликлиника?</p>
-                <div class="rating_window_stars">
-                    <img class="rating_window_single_star" height="32" src="images/Star_1.svg" width="32">
-                    <img class="rating_window_single_star" height="32" src="images/Star_1.svg" width="32">
-                    <img class="rating_window_single_star" height="32" src="images/Star_1.svg" width="32">
-                    <img class="rating_window_single_star" height="32" src="images/Star_1.svg" width="32">
-                    <img class="rating_window_single_star" height="32" src="images/Star_empty.svg" width="32">
-                </div>
-            </div>
-            <div class="rating_window_2_of_2">  <!--скрыто-->
-                <div class="count_block">
-                    <p class="count">2/2</p>
-                </div>
-                <p class="rating_window_header">Помогите нам с оценкой поликлиники</p>
-                <p class="rating_window_bottom">Стали бы вы рекомендовать<br> эту поликлинику?</p>
-                <form class="confirm_buttons">
-                    <input class="yes_button" type="button" value="Да">
-                    <input class="no_button" type="button" value="Нет">
-                </form>
+            <div class="services_list_modal">
+                {{#each services}}
+                    <div class="services_list_item">
+                        <div class="services_list_item_text">
+                            <p class="name_of_service">{{@key}}</p>
+                            <p class="price">{{this}}</p>
+                        </div>
+                        <img class="services_list_line" height="1" src="images/Line_11.svg" width="524">
+                    </div>
+                {{/each}}
             </div>
         </div>
+        <a rel="modal:close" class="close-modal">
+            <img src="images/close_icon.png" id="modal_close_icon" width="40" height="40">
+        </a>
     </div>
-    <div class="modal_window_right">
-        <div class="clinic_services_modal">
-            <h3 class="services_modal_header">Услуги вет. клиники</h3>
-            <!--<div class="service_selector">
-                <button type="button" class="service_button" autofocus value="next">Общее</button>
-                <button type="button" class="service_button">Диагностика</button>
-                <button type="button" class="service_button">Вакцинация</button>
-                <button type="button" class="service_button">Манипуляции</button>
-                <button type="button" class="service_button">Репродукции</button>
-                <button type="button" class="service_button">Операции</button>
-                <button class="service_button" type="button">Груминг</button>
-            </div> -->
-        </div>
-        <div class="services_list_modal">
-            {{#each services}}
-                <div class="services_list_item">
-                    <div class="services_list_item_text">
-                        <p class="name_of_service">{{@key}}</p>
-                        <p class="price">{{this}}</p>
-                    </div>
-                    <img class="services_list_line" height="1" src="images/Line_11.svg" width="524">
-                </div>
-            {{/each}}
-        </div>
+    <div class="modal_reviews">
+        <h3>Отзывы об этой клинике</h3>
+        <img class="vk_window" height="900" src="images/examples/image_10.png" width="1063">
     </div>
-    <a rel="modal:close" class="close-modal">
-        <img src="images/close_icon.png" id="modal_close_icon" width="40" height="40">
-    </a>
-</div>
-<div class="modal_reviews">
-    <h3>Отзывы об этой клинике</h3>
-    <img class="vk_window" height="900" src="images/examples/image_10.png" width="1063">
-</div>
+{{/with}}

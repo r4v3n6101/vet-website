@@ -1,9 +1,6 @@
 function loadCatalog(region) {
     $.get('/catalog', {region: region}, function (data) {
-        let body = data.replace(/^.*?<body>(.*?)<\/body>.*?$/s, "$1");
-        let placeholder = $('.catalog_placeholder');
-        placeholder.empty();
-        placeholder.append(body);
+        $('.catalog_placeholder').html(data);
     });
 }
 

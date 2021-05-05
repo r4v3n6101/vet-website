@@ -25,12 +25,16 @@ app.get('/api/search', (request, response) => {
 
 app.get('/catalog', (request, response) => {
     response.render('catalog', {
-        clinics: api.getClinics(null, request.query['region'], true)
+        clinics: api.getClinics(null, request.query['region'], true),
+        layout: false
     })
 })
 
 app.get('/modal', (request, response) => {
-    response.render('modal', api.getClinics(request.query['name'], null, false)[0])
+    response.render('modal', {
+        data: api.getClinics(request.query['name'], null, false)[0],
+        layout: false
+    })
 })
 
 app.get('/', (request, response) => {
