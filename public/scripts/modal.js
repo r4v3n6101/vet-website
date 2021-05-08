@@ -3,6 +3,8 @@ $(function () {
         event.preventDefault();
         $(this).modal({
             modalClass: "modal_window",
+            escapeModal: false,
+            clickClose: false,
             showClose: false,
         });
     });
