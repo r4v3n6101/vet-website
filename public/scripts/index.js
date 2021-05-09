@@ -12,4 +12,9 @@ $(function () {
         let region = $(this).val();
         loadCatalog(region);
     });
+
+    $('#rct4_close_button').click(function (event) {
+        event.preventDefault();
+        $('.rectangle_4').slideUp();
+    })
 });

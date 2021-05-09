@@ -5,6 +5,8 @@ $(function () {
             modalClass: "modal_window",
             clickClose: false,
             showClose: false,
+            fadeDuration: 250,
+            fadeDelay: 0.80
         });
     });
 });
