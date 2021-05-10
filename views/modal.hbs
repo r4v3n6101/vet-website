@@ -14,9 +14,7 @@
                 </div>
             </div>
             <div class="frameGeo">
-                <iframe class="map" frameborder="0" src="https://yandex.ru/map-widget/v1/?um=constructor%3Ade7217d7a881fc3b4a116f34
-                    f26b3bea195580ceaaee71a61eda8d96e468057d&amp;source=constructor">
-                </iframe>
+                <iframe class="map" frameborder="0" src="{{map}}"></iframe>
                 <div class="clinic_contacts">
                     <div class="clinic_tel_modal">
                         <p class="clinic_tel_modal_top">Телефон для записи</p>
@@ -50,7 +48,6 @@
                         <button type="button" class="date_button">Сб<br>13</button>
                         <button type="button" class="date_button">Вс<br>14</button>
                         <button type="button" class="date_button">Пн<br>15</button>
-                        <input type="image" class="next_date" src="images/Frame_133.svg">
                     </form>
                     <form class="time_selector" id="time_selector_modal">
                         <button type="button" class="time_button" value="next">10:00</button>
@@ -111,6 +108,7 @@
     </div>
     <div class="modal_reviews">
         <h3>Отзывы об этой клинике</h3>
-        <img class="vk_window" height="900" src="images/examples/image_10.png" width="1063">
+        <iframe style="max-width: 750px;width:100%;height:800px;border:1px solid #e6e6e6;border-radius:8px;box-sizing:border-box"
+                src="{{reviews}}"></iframe>
     </div>
 {{/with}}

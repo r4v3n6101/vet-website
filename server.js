@@ -14,14 +14,32 @@ app.set('view engine', '.hbs')
 app.set('views', path.join(__dirname, 'views'))
 app.use(express.static('public'))
 
-/* TODO : supposed to be removed
-app.get('/api/search', (request, response) => {
-    response.send(api.getClinics(
+app.get('/api/contact', (request, response) => {
+    // TODO : verify data (number & messenger)
+    api.newContact(
         request.query['name'],
-        request.query['region'],
-        request.query['preview'] === '1',
-    ))
-})*/
+        request.query['number'],
+        request.query['messenger']
+    ).then(
+        () => response.send({}),
+        err => response.send({err: err})
+    )
+})
+
+app.get('/api/time', (request, response) => {
+    // TODO : verify data (name  & date)
+    api.getFreeTime(
+        request.query['name'],
+        request.query['date']
+    ).then(
+        data => response.send(data),
+        err => response.send({err: err})
+    )
+})
+
+app.get('/api/appointment', (request, response) => {
+    // TODO : make appointment with api & check parameters
+})
 
 app.get('/catalog', (request, response) => {
     response.render('catalog', {

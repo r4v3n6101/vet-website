@@ -1,12 +1,10 @@
 [
   {
+    "spreadsheetId": "1PisVt9iy2zL3v4UNWUUmoMoWu-w_wAU6NNdvxPWjm6c",
     "name": "Test name",
     "image": "",
     "region": "Central",
     "labour_time": "20:00",
-    "rating": 95,
-    "comments_num": 12,
-    "rec_perc": 71.3,
     "phone": "+7 (999) 444-22-00",
     "address": "ул. Пушкина д. Колотушкина",
     "description": "Описание чудесной клиники",
@@ -15,16 +13,16 @@
       "2": "200",
       "3": "300",
       "4": "400"
-    }
+    },
+    "map": "",
+    "reviews": ""
   },
   {
-    "name": "Автозаводская клиника",
+    "spreadsheetId": "1pqOTzNbjZQMrjivFRztpf0kvPks8audQFhTwyx4p6cM",
+    "name": "Test name x2",
     "image": "",
-    "region": "Avtozavodskoy",
-    "labour_time": "20:00",
-    "rating": 95,
-    "comments_num": 12,
-    "rec_perc": 71.3,
+    "region": "Avtozavodskiy",
+    "labour_time": "00:00",
     "phone": "+7 (999) 444-22-00",
     "address": "ул. Пушкина д. Колотушкина",
     "description": "Описание чудесной клиники",
@@ -32,8 +30,9 @@
       "1": "100",
       "2": "200",
       "3": "300",
-      "4": "400",
-      "unique service": "300$"
-    }
+      "4": "400"
+    },
+    "map": "https://yandex.ru/map-widget/v1/-/CCU4mAAVcB",
+    "reviews": "https://yandex.ru/maps-reviews-widget/1116181495?comments"
   }
 ]
