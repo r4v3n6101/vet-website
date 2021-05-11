@@ -21,7 +21,7 @@ app.get('/api/contact', (request, response) => {
         request.query['messenger']
     ).then(
         () => response.send({}),
-        err => response.send({err: err})
+        err => response.status(err.code).send({err: err.text})
     )
 })
 
@@ -31,7 +31,7 @@ app.get('/api/time', (request, response) => {
         request.query['date']
     ).then(
         data => response.send(data),
-        err => response.send({err: err})
+        err => response.status(err.code).send({err: err.text})
     )
 })
 
@@ -46,7 +46,7 @@ app.get('/api/appointment', (request, response) => {
         request.query['comment']
     ).then(
         () => response.send({}),
-        err => response.send({err: err})
+        err => response.status(err.code).send({err: err.text})
     )
 })
 

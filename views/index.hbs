@@ -37,20 +37,21 @@
         <p class="rct4_gray_text">Наши специалисты помогут разобраться</p>
         <p class="rct4_text_bottom">Оставьте заявку на бесплатную консультацию <br> с нашими специалистами</p>
         <p class="rct4_messenger_selector_text">Выберите удобный для Вас мессенджер:</p>
-        <div class="messenger_selector">
-            <input type="radio" name="messenger" value="telegram">
-            <img class="messenger_icon" src="images/Telegram_icon.png">
-            <p class="messenger_name">Telegram</p>
-            <input type="radio" name="messenger" value="whatsapp">
-            <img class="messenger_icon" src="images/Whatsapp_icon.png">
-            <p class="messenger_name">WhatsApp</p>
-            <input type="radio" name="messenger" value="viber">
-            <img class="messenger_icon" src="images/Viber_icon.png">
-            <p class="messenger_name">Viber</p>
-        </div>
         <form class="registration">
-            <input class="reg_pole" id="reg_name" placeholder="Ваше имя" type="text">
-            <input class="reg_pole" id="reg_tel" placeholder="Ваш номер телефона" type="tel">
+            <div class="messenger_selector">
+                <input type="radio" name="messenger" value="Telegram" required>
+                <img class="messenger_icon" src="images/Telegram_icon.png">
+                <p class="messenger_name">Telegram</p>
+                <input type="radio" name="messenger" value="WhatsApp" required>
+                <img class="messenger_icon" src="images/Whatsapp_icon.png">
+                <p class="messenger_name">WhatsApp</p>
+                <input type="radio" name="messenger" value="Viber" required>
+                <img class="messenger_icon" src="images/Viber_icon.png">
+                <p class="messenger_name">Viber</p>
+            </div>
+            <input class="reg_pole" id="reg_name" name="name" placeholder="Ваше имя" type="text" required>
+            <input class="reg_pole" id="reg_tel" name="number" placeholder="Ваш номер телефона"
+                   pattern="8[0-9]{10}" type="tel" required>
             <input class="reg_pole" id="reg_submit" type="submit" value="Напишите мне">
         </form>
     </div>
