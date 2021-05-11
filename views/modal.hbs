@@ -6,15 +6,15 @@
                      src="{{#if image}} {{image}} {{else}} images/image_filler.svg {{/if}}" width="72">
                 <div>
                     <h3 class="clinic_name">{{name}}</h3>
-                    <div class="clinic_rating">
-                        <img height="24" id="star" src="images/Star_1.svg" width="24">
-                        <p class="rating">{{rating}}</p>
-                        <p class="number_of_reviews">{{comments_num}} отзывов</p>
+                    <!-- TODO -->
+                    <div style="width:150px;height:104px;overflow:hidden;position:relative;">
+                        <iframe style="width:100%;height:100%;border:1px solid #e6e6e6;border-radius:8px;box-sizing:border-box"
+                                src="https://yandex.ru/maps-reviews-widget/1116181495"></iframe>
                     </div>
                 </div>
             </div>
             <div class="frameGeo">
-                <iframe class="map" frameborder="0" src="{{map}}"></iframe>
+                <iframe class="map" frameborder="0" src="{{yandex.map}}"></iframe>
                 <div class="clinic_contacts">
                     <div class="clinic_tel_modal">
                         <p class="clinic_tel_modal_top">Телефон для записи</p>
@@ -109,6 +109,6 @@
     <div class="modal_reviews">
         <h3>Отзывы об этой клинике</h3>
         <iframe style="max-width: 750px;width:100%;height:800px;border:1px solid #e6e6e6;border-radius:8px;box-sizing:border-box"
-                src="{{reviews}}"></iframe>
+                src="{{yandex.reviews}}"></iframe>
     </div>
 {{/with}}
