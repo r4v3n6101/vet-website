@@ -14,8 +14,10 @@
       "3": "300",
       "4": "400"
     },
-    "map": "",
-    "reviews": ""
+    "yandex": {
+      "map": "",
+      "reviews": ""
+    }
   },
   {
     "spreadsheetId": "1pqOTzNbjZQMrjivFRztpf0kvPks8audQFhTwyx4p6cM",
@@ -32,7 +34,9 @@
       "3": "300",
       "4": "400"
     },
-    "map": "https://yandex.ru/map-widget/v1/-/CCU4mAAVcB",
-    "reviews": "https://yandex.ru/maps-reviews-widget/1116181495?comments"
+    "yandex": {
+      "map": "https://yandex.ru/map-widget/v1/-/CCU4mAAVcB",
+      "reviews": "https://yandex.ru/maps-reviews-widget/1116181495?comments"
+    }
   }
 ]

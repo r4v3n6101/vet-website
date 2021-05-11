@@ -15,7 +15,6 @@ app.set('views', path.join(__dirname, 'views'))
 app.use(express.static('public'))
 
 app.get('/api/contact', (request, response) => {
-    // TODO : verify data (number & messenger)
     api.newContact(
         request.query['name'],
         request.query['number'],
@@ -27,7 +26,6 @@ app.get('/api/contact', (request, response) => {
 })
 
 app.get('/api/time', (request, response) => {
-    // TODO : verify data (name  & date)
     api.getFreeTime(
         request.query['name'],
         request.query['date']
@@ -38,7 +36,18 @@ app.get('/api/time', (request, response) => {
 })
 
 app.get('/api/appointment', (request, response) => {
-    // TODO : make appointment with api & check parameters
+    api.newAppointment(
+        request.query['name'],
+        request.query['date'],
+        request.query['time'],
+        request.query['number'],
+        request.query['fio'],
+        request.query['animal'],
+        request.query['comment']
+    ).then(
+        () => response.send({}),
+        err => response.send({err: err})
+    )
 })
 
 app.get('/catalog', (request, response) => {
