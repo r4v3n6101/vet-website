@@ -1280,7 +1280,7 @@ section.precise .fill .rating .value {
 
 section.precise .open .rating .value:before,
 section.precise .fill .rating .value:before {
-    color: orange;
+    color: #FC842D;
     content: "";
 }
 
