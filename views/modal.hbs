@@ -6,10 +6,16 @@
                      src="{{#if image}} {{image}} {{else}} images/image_filler.svg {{/if}}" width="72">
                 <div>
                     <h3 class="clinic_name">{{name}}</h3>
-                    <!-- TODO -->
-                    <div style="width:150px;height:104px;overflow:hidden;position:relative;">
-                        <iframe style="width:100%;height:100%;border:1px solid #e6e6e6;border-radius:8px;box-sizing:border-box"
-                                src="https://yandex.ru/maps-reviews-widget/1116181495"></iframe>
+                    <div class="clinic_rating">
+                        <p class="rating_num">{{yandex.rating}}</p>
+                        <section class="precise">
+                            <div class="fill">
+                                <div class="rating">
+                                    <div class="bg"></div>
+                                    <div class="value" style="width: {{yandex.rating_percent}}%"></div>
+                                </div>
+                            </div>
+                        </section>
                     </div>
                 </div>
             </div>

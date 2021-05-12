@@ -11,9 +11,15 @@
                     <h3 class="clinic_name">{{name}}</h3>
                     <p class="clinic_working_hours">Сегодня работают до {{labour_time}}</p>
                     <div class="clinic_rating">
-                        <img height="15" id="star" src="images/Star_1.svg" width="15">
-                        <p class="rating">{{yandex.rating}}</p>
-                        <p class="number_of_reviews">{{comments_num}} отзывов</p>
+                        <p class="rating_num">{{yandex.rating}}</p>
+                        <section class="precise">
+                            <div class="fill">
+                                <div class="rating">
+                                    <div class="bg"></div>
+                                    <div class="value" style="width: {{yandex.rating_percent}}%"></div>
+                                </div>
+                            </div>
+                        </section>
                     </div>
                 </div>
             </div>

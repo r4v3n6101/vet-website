@@ -1222,3 +1222,68 @@ body {
     color: #351D0E;
 }
 
+.rating_num {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+section {
+    padding: 0 11px;
+    margin: inherit;
+    text-align: center;
+}
+
+section > div {
+    margin-bottom: 20px;
+    float: left;
+    width: 50%;
+}
+
+section.precise .open,
+section.precise .fill {
+    float: left;
+    width: 50%;
+}
+
+section.precise .open .rating,
+section.precise .fill .rating {
+    height: 20px;
+    margin: 0 auto;
+    position: relative;
+    width: 94px;
+}
+
+section.precise .open .rating .bg,
+section.precise .open .rating .value,
+section.precise .fill .rating .bg,
+section.precise .fill .rating .value {
+    height: 20px;
+    position: absolute;
+    text-align: center;
+}
+
+section.precise .open .rating .bg:before,
+section.precise .open .rating .value:before,
+section.precise .fill .rating .bg:before,
+section.precise .fill .rating .value:before {
+    color: #ccc;
+    content: "";
+    font-family: FontAwesome, serif;
+    font-size: 20px;
+}
+
+section.precise .open .rating .value,
+section.precise .fill .rating .value {
+    overflow: hidden;
+    width: 50%;
+}
+
+section.precise .open .rating .value:before,
+section.precise .fill .rating .value:before {
+    color: orange;
+    content: "";
+}
+
+section.precise .fill .rating .bg:before {
+    content: "";
+}
