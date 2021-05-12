@@ -29,7 +29,7 @@ $(function () {
                 // TODO : show successful modal
             },
             error: function (jqXHR, exception) {
-                // TODO : just reopen, but should show modal error
+                // TODO : show modal error
             },
         })
     });
