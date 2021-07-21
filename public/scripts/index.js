@@ -47,7 +47,7 @@ $(function () {
     $(document).ready(function () {
         $('#slider_icon_reg').click(function () {
             $('.modal_registration').slideToggle('slow');
-                $('#slider_icon_reg').css({'transform': 'rotate(180)'})
+                $('#slider_icon_reg').css({'transform': 'rotate(0)'})
             return false;
         });
     });

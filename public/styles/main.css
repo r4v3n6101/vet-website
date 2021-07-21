@@ -135,8 +135,9 @@ body {
     border: none;
     color: #FFFFFF;
     font-size: 14px;
+    text-decoration: none;
 }
-@media screen and (min-width: 401px) {
+@media screen and (min-width: 501px) {
     .show {
         display: none;
     }
@@ -188,6 +189,7 @@ body {
     color: #FFFFFF;
     border: 0;
     font-size: 14px;
+    cursor: pointer;
 }
 
 #Dog {
@@ -459,6 +461,7 @@ body {
     border-radius: 8px 8px 0 0;
     outline: none;
     position: relative;
+    cursor: pointer;
 }
 
 .first_date_button {
@@ -531,6 +534,10 @@ body {
 }
 
 .load_more_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
     background-color: #FC842D;
     color: #FFFFFF;
     border-radius: 16px;
@@ -540,6 +547,7 @@ body {
     height: 48px;
     margin-bottom: 46px;
     outline: none;
+    cursor: pointer;
 }
 
 .reg_success {
@@ -722,6 +730,14 @@ body {
     margin-top: 16px;
 }
 
+#horizontal_line_mobile_4 {
+    display: none;
+}
+
+.slider_icon {
+    display: none;
+}
+
 #date-time_selector_modal {
     width: 445px;
     height: 284px;
@@ -743,6 +759,7 @@ body {
     color: #FFFFFF;
     font-size: 16px;
     margin-top: 16px;
+    cursor: pointer;
 }
 
 .cancel_button {
@@ -756,6 +773,7 @@ body {
     font-size: 16px;
     margin-left: 12px;
     margin-top: 16px;
+    cursor: pointer;
 }
 
 .modal_window_right {
@@ -939,6 +957,7 @@ body {
     color: #FFFFFF;
     outline: none;
     border: none;
+    cursor: pointer;
 }
 
 .no_button {
@@ -949,6 +968,7 @@ body {
     background-color: #FFFFFF;
     outline: none;
     color: #351D0E;
+    cursor: pointer;
 }
 
 section {
@@ -1197,6 +1217,9 @@ section.precise .fill .rating .bg:before {
         height: 108px;
         padding: 10px 10px 6px 10px;
     }
+    .reg_success {
+        width: 855px;
+    }
     .modal_window {
         width: 1062px;
         padding: 33px 89px;
@@ -1227,7 +1250,7 @@ section.precise .fill .rating .bg:before {
 
 /* adaptive layout for tablets */
 
-@media screen and (max-width: 900px) and (min-width: 401px) {
+@media screen and (max-width: 900px) and (min-width: 501px) {
     .vector_1 {
         display: flex;
         width: 600px;
@@ -1242,6 +1265,8 @@ section.precise .fill .rating .bg:before {
 
     .cat {
         margin-left: 100px;
+        width: 400px;
+        height: 325px;
     }
 
     .rectangle_4 {
@@ -1309,7 +1334,7 @@ section.precise .fill .rating .bg:before {
 
 /* adaptive layout for smartphones */
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
     .vector_1 {
         display: flex;
         width: 350px;
@@ -1375,6 +1400,13 @@ section.precise .fill .rating .bg:before {
     #background_paw_7,#background_paw_4, #background_paw_5 {
         display: none;
     }
+    #background_paw_6 {
+        left: 19px;
+    }
+    #background_paw_3 {
+        top: 240px;
+        right: 20px;
+    }
 
     .region_selector {
         display: flex;
@@ -1398,7 +1430,7 @@ section.precise .fill .rating .bg:before {
 
     .product_card {
         display: flex;
-        margin-top: 24px;
+        margin-top: 0;
         flex-direction: column;
         width: 288px;
         padding: 16px;
@@ -1519,6 +1551,7 @@ section.precise .fill .rating .bg:before {
     }
     .modal_window_right {
         margin-left: 16px;
+        width: 280px;
     }
     .close-modal {
         top: 16px;
@@ -1551,6 +1584,7 @@ section.precise .fill .rating .bg:before {
         height: 104px;
     }
     .clinic_tel_modal_top, .clinic_address_modal_top {
+        margin-top: 9px;
         font-size: 12px;
         text-align: left;
     }
@@ -1579,6 +1613,7 @@ section.precise .fill .rating .bg:before {
         margin-top: 0;
     }
     .slider_icon {
+        display: inherit;
         cursor: pointer;
         margin-top: 0;
         transform: rotate(180deg);
@@ -1608,12 +1643,15 @@ section.precise .fill .rating .bg:before {
     }
     .reg_pole_modal {
         width: 288px;
+        font-size: 14px;
     }
     .reg_problem_modal {
         width: 288px;
+        font-size: 14px;
     }
     .reg_submit_modal {
         width: 200px;
+        font-size: 14px;
     }
     .reg_success_modal {
         width: 288px;
@@ -1673,8 +1711,8 @@ section.precise .fill .rating .bg:before {
     }
     #horizontal_line_mobile_4 {
         display: inherit;
-        transform: translateX(-67px);
-        width: 320px;
+        transform: translateX(-32px);
+        width: 318px;
         color: #E6E2DF;
         border: 1px solid #E6E2DF;
         margin-top: 16px;
@@ -1705,5 +1743,10 @@ section.precise .fill .rating .bg:before {
     #reg_submit {
         height: 44px;
         width: 160px;
+    }
+    .save_button, .cancel_button {
+        font-size: 14px;
+        width: 130px;
+        height: 40px;
     }
 }
