@@ -1366,8 +1366,8 @@ section.precise .fill .rating .bg:before {
     }
 
     .rectangle_4 {
-        width: 280px;
-        height: 288px;
+        width: 310px;
+        height: auto;
         flex-direction: column;
         padding: 16px;
     }
@@ -1380,14 +1380,20 @@ section.precise .fill .rating .bg:before {
         margin-left: -40px;
     }
     .rct4_text_bottom {
-        display: none;
+        margin-left: -40px;
     }
     .rct4_messenger_selector_text {
-        display: none;
+        margin-left: -40px;
+        margin-bottom: 0;
     }
     .registration {
-        display: none;
+        margin-top: 5px;
+        margin-left: -40px;
+        font-size: 14px;
+        padding: 10px;
+        box-sizing: border-box;
     }
+
     #Dog {
         width: 189px;
         height: 148px;
@@ -1401,11 +1407,11 @@ section.precise .fill .rating .bg:before {
         display: none;
     }
     #background_paw_6 {
-        left: 19px;
+        display: none;
     }
     #background_paw_3 {
         top: 240px;
-        right: 20px;
+        right: 5px;
     }
 
     .region_selector {
@@ -1726,19 +1732,21 @@ section.precise .fill .rating .bg:before {
     }
     .messenger_selector {
         font-size: 14px;
+        margin-left: -20px;
     }
     .messenger_name {
-        font-size: 14px;
-        margin-right: 10px;
+        font-size: 13px;
+        margin-right: 8px;
     }
     .messenger_icon {
         width: 20px;
         height: 20px;
     }
     #reg_name, #reg_tel {
-        width: 272px;
+        width: 220px;
         height: 48px;
         max-height: 48px;
+        box-sizing: border-box;
     }
     #reg_submit {
         height: 44px;
