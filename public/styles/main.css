@@ -137,6 +137,7 @@ body {
     font-size: 14px;
     text-decoration: none;
 }
+
 @media screen and (min-width: 501px) {
     .show {
         display: none;
@@ -383,6 +384,7 @@ body {
     top: 125px;
     width: 105%;
 }
+
 #horizontal_line_mobile {
     display: none;
 }
@@ -442,17 +444,20 @@ body {
     flex-direction: row;
     align-items: center;
 }
+
 #slider_right {
     display: none;
     transform: rotate(90deg);
     width: 32px;
     height: 32px;
 }
+
 #slider_left {
     display: none;
     width: 32px;
     height: 32px;
 }
+
 .date_button {
     width: 56px;
     height: 72px;
@@ -1036,14 +1041,17 @@ section.precise .fill .rating .bg:before {
     margin-top: 16px;
     margin-left: 16px;
 }
+
 .reg_window_header_upper {
     font-size: 18px;
     color: #FC842D;
 }
+
 .reg_window_header_bottom {
     font-size: 14px;
     color: #88776B;
 }
+
 .reg_window_main {
     margin-top: 40px;
     margin-left: 6px;
@@ -1081,6 +1089,7 @@ section.precise .fill .rating .bg:before {
     .messenger_selector {
         margin-bottom: 7px;
     }
+
     .rectangle_4 {
         width: 855px;
         height: 358px;
@@ -1201,6 +1210,7 @@ section.precise .fill .rating .bg:before {
         width: 100px;
         font-size: 12px;
     }
+
     .selector_text {
         font-size: 16px;
         margin-top: 17px;
@@ -1217,13 +1227,16 @@ section.precise .fill .rating .bg:before {
         height: 108px;
         padding: 10px 10px 6px 10px;
     }
+
     .reg_success {
         width: 855px;
     }
+
     .modal_window {
         width: 1062px;
         padding: 33px 89px;
     }
+
     .frameGeo {
         margin-top: 37px;
         width: 401px;
@@ -1234,6 +1247,7 @@ section.precise .fill .rating .bg:before {
         width: 401px;
         height: 166px;
     }
+
     .services_list_modal {
         width: 435px;
     }
@@ -1326,6 +1340,7 @@ section.precise .fill .rating .bg:before {
         margin-left: 0;
     }
 }
+
 @media screen and (max-width: 900px) {
     .product_card_horizontal_line {
         display: none;
@@ -1361,6 +1376,7 @@ section.precise .fill .rating .bg:before {
     .f132_list_item {
         font-size: 16px;
     }
+
     .f132_text_top {
         margin-top: 15px;
     }
@@ -1371,21 +1387,26 @@ section.precise .fill .rating .bg:before {
         flex-direction: column;
         padding: 16px;
     }
+
     .rct4_header {
         font-size: 16px;
         line-height: 1;
         margin-left: -40px;
     }
+
     .rct4_gray_text {
         margin-left: -40px;
     }
+
     .rct4_text_bottom {
         margin-left: -40px;
     }
+
     .rct4_messenger_selector_text {
         margin-left: -40px;
         margin-bottom: 0;
     }
+
     .registration {
         margin-top: 5px;
         margin-left: -40px;
@@ -1399,16 +1420,20 @@ section.precise .fill .rating .bg:before {
         height: 148px;
         margin: 0 auto -35px auto;
     }
+
     #rct4_close_button {
         top: 15px;
         right: 12px;
     }
-    #background_paw_7,#background_paw_4, #background_paw_5 {
+
+    #background_paw_7, #background_paw_4, #background_paw_5 {
         display: none;
     }
+
     #background_paw_6 {
         display: none;
     }
+
     #background_paw_3 {
         top: 240px;
         right: 5px;
@@ -1420,14 +1445,17 @@ section.precise .fill .rating .bg:before {
         width: 280px;
         padding: 16px;
     }
+
     .region_selector_header {
         font-size: 24px;
         width: 250px;
     }
+
     .region_selector_bottom {
         flex-direction: column;
         align-items: flex-start;
     }
+
     .region_button {
         width: 143px;
         height: 39px;
@@ -1441,60 +1469,76 @@ section.precise .fill .rating .bg:before {
         width: 288px;
         padding: 16px;
     }
+
     .recommendations {
         display: none;
     }
+
     .clinic_name {
         font-size: 18px;
     }
+
     .clinic_logo {
         width: 48px;
         height: 48px;
         margin-right: 12px;
     }
+
     .clinic_working_hours {
         font-size: 14px;
         width: 135px;
     }
+
     .rating_num {
         font-size: 16px;
     }
+
     .clinic_tel, .address {
         font-size: 14px;
     }
+
     .clinic_tel {
         width: 160px;
         margin-top: 16px;
     }
+
     .address {
         margin-top: 12px;
         margin-bottom: 0;
     }
+
     .product_card_right_top {
         display: flex;
         flex-direction: column;
     }
+
     .service {
         width: 256px;
         margin-bottom: 15px;
     }
+
     .price, .name_of_service {
         font-size: 14px;
     }
+
     .clinic_description {
         display: none;
     }
+
     .date-time_selector {
         margin-left: 10px;
     }
+
     .selector_text {
         font-size: 14px;
     }
+
     .date_selector {
         margin-bottom: 12px;
         touch-action: pan-x;
         overflow-x: scroll;
     }
+
     .date_button {
         width: 48px;
         height: 48px;
@@ -1504,10 +1548,12 @@ section.precise .fill .rating .bg:before {
         border: 1px solid #E7E2E0;
         white-space: nowrap;
     }
+
     .date_button:focus {
         background: #F5F2F0;
         height: 48px;
     }
+
     .time_selector {
         touch-action: pan-x;
         width: 250px;
@@ -1518,11 +1564,13 @@ section.precise .fill .rating .bg:before {
         flex-wrap: nowrap;
         height: auto;
     }
+
     .time_button {
         border: 1px solid #E7E2E0;
         width: 68px;
         height: 40px;
     }
+
     .all_services {
         margin-top: 24px;
         width: 112px;
@@ -1530,6 +1578,7 @@ section.precise .fill .rating .bg:before {
         font-size: 14px;
         transform: translateX(-50px);
     }
+
     .product_card_vertical_line {
         display: none;
     }
@@ -1541,6 +1590,7 @@ section.precise .fill .rating .bg:before {
         text-align: center;
         padding: 25px;
     }
+
     .reg_success_paw {
         align-self: center;
         width: 50px;
@@ -1552,20 +1602,25 @@ section.precise .fill .rating .bg:before {
         margin: -30px;
         padding: 16px;
     }
+
     .modal_window_main {
         flex-direction: column;
     }
+
     .modal_window_right {
         margin-left: 16px;
         width: 280px;
     }
+
     .close-modal {
         top: 16px;
         right: 16px;
     }
+
     .frameGeo {
         width: 288px;
     }
+
     .mobile_recommendations {
         display: flex;
         width: 288px;
@@ -1580,32 +1635,40 @@ section.precise .fill .rating .bg:before {
         margin-top: 24px;
         box-sizing: border-box;
     }
+
     .map {
         width: 288px;
         height: 160px;
     }
+
     .clinic_contacts {
         flex-direction: column;
         width: 154px;
         height: 104px;
     }
+
     .clinic_tel_modal_top, .clinic_address_modal_top {
         margin-top: 9px;
         font-size: 12px;
         text-align: left;
     }
+
     .tel_number_modal, .address_modal {
         font-size: 14px;
     }
+
     .clinic_tel_modal_bottom {
         width: 157px;
     }
+
     .clinic_address_modal_bottom {
         width: max-content;
     }
+
     #location_icon_modal {
         margin-right: 10px;
     }
+
     .slider_form_reg {
         display: flex;
         width: 285px;
@@ -1614,60 +1677,74 @@ section.precise .fill .rating .bg:before {
         align-items: center;
         margin-top: 40px;
     }
+
     .modal_reg_header {
         cursor: pointer;
         margin-top: 0;
     }
+
     .slider_icon {
         display: inherit;
         cursor: pointer;
         margin-top: 0;
         transform: rotate(180deg);
     }
+
     .date-time_selector_buttons {
         width: 288px;
         display: flex;
         align-items: center;
         justify-content: center;
     }
+
     #date-time_selector_modal {
         height: auto;
         width: 260px;
     }
+
     #date_selector_modal {
         width: 260px;
         overflow-x: scroll;
         flex-wrap: nowrap;
     }
+
     #time_selector_modal {
         width: 260px;
         overflow-x: scroll;
         flex-wrap: nowrap;
     }
+
     .modal_reg_form {
         width: 288px;
     }
+
     .reg_pole_modal {
         width: 288px;
         font-size: 14px;
     }
+
     .reg_problem_modal {
         width: 288px;
         font-size: 14px;
     }
+
     .reg_submit_modal {
         width: 200px;
         font-size: 14px;
     }
+
     .reg_success_modal {
         width: 288px;
     }
+
     .reg_success_modal_header {
         font-size: 16px;
     }
+
     .reg_success_modal_bottom {
         font-size: 14px;
     }
+
     .slider_form_services {
         display: flex;
         width: 270px;
@@ -1676,12 +1753,14 @@ section.precise .fill .rating .bg:before {
         align-items: center;
         margin-top: 16px;
     }
+
     .clinic_services_modal {
         display: flex;
         align-self: flex-start;
         margin-top: 10px;
         width: 288px;
     }
+
     .services_modal_header {
         display: flex;
         align-self: flex-start;
@@ -1690,16 +1769,20 @@ section.precise .fill .rating .bg:before {
         cursor: pointer;
         margin-left: -15px;
     }
+
     .services_list_modal {
         width: 288px;
         margin-left: -15px;
     }
+
     .services_list_item_text {
         align-items: flex-start;
     }
+
     .services_list_line {
         width: 288px;
     }
+
     #horizontal_line_mobile_3 {
         display: inherit;
         transform: translateX(-86px);
@@ -1707,6 +1790,7 @@ section.precise .fill .rating .bg:before {
         color: #E6E2DF;
         border: 1px solid #E6E2DF;
     }
+
     #horizontal_line_mobile_1 {
         display: inherit;
         transform: translateX(-16px);
@@ -1715,6 +1799,7 @@ section.precise .fill .rating .bg:before {
         border: 1px solid #E6E2DF;
         margin-top: 16px;
     }
+
     #horizontal_line_mobile_4 {
         display: inherit;
         transform: translateX(-32px);
@@ -1723,35 +1808,43 @@ section.precise .fill .rating .bg:before {
         border: 1px solid #E6E2DF;
         margin-top: 16px;
     }
+
     .modal_mobile {
         background-color: #FFFFFF;
     }
+
     .reg_window_main {
         padding: 10px;
         box-sizing: border-box;
     }
+
     .messenger_selector {
         font-size: 14px;
         margin-left: -20px;
     }
+
     .messenger_name {
         font-size: 13px;
         margin-right: 8px;
     }
+
     .messenger_icon {
         width: 20px;
         height: 20px;
     }
+
     #reg_name, #reg_tel {
         width: 220px;
         height: 48px;
         max-height: 48px;
         box-sizing: border-box;
     }
+
     #reg_submit {
         height: 44px;
         width: 160px;
     }
+
     .save_button, .cancel_button {
         font-size: 14px;
         width: 130px;
