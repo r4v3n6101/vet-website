@@ -72,15 +72,6 @@ app.get('/modal', (request, response) => {
     )
 })
 
-app.get('/modal_mobile', (request, response) => {
-    api.getFullClinicsData(request.query['name'], null).then(clinics =>
-        response.render('modal_mobile', {
-            data: clinics[0],
-            layout: false
-        })
-    )
-})
-
 app.get('/', (request, response) => {
     response.render('index')
 })
