@@ -23,6 +23,7 @@
                     </div>
                 </div>
             </div>
+            <hr id="horizontal_line_mobile_1"/>
             <div class="recommendations">
                 <img height="16" id="Paw" src="images/Paw.svg" width="20">
                 <p class="rec_text">{{yandex.rating_percent}}% пользователей рекомендуют клинику</p>
@@ -37,7 +38,7 @@
             </div>
             <p class="clinic_description">{{description}}</p>
         </div>
-
+        <hr id="horizontal_line_mobile_1"/>
         <div class="product_card_right">
             <img class="product_card_horizontal_line" src="images/Line_11.svg">
             <div class="product_card_right_top">
@@ -53,8 +54,9 @@
                 </div>
                 <a href="modal?name={{name}}" class="all_services" data-modal>Все услуги</a>
             </div>
+            <hr id="horizontal_line_mobile_1"/>
             <div class="product_card_right_bottom">
-                <p class="selector_text">Выберете день и время для записи на приём</p>
+                <p class="selector_text">Выберите день и время для записи на приём</p>
                 <div class="date-time_selector">
                     <div class="date_selector">
                         <!-- TODO: make it all `a` element so they're all just references, not buttons  -->
@@ -67,41 +69,24 @@
                         <button class="date_button">Пн<br>15</button>
                     </div>
                     <div class="time_selector">
-                        <a href="modal" class="time_button" data-modal>10:00</a>
-                        <a href="modal" class="time_button" data-modal>11:00</a>
-                        <a href="modal" class="time_button" data-modal>12:00</a>
-                        <a href="modal" class="time_button" data-modal>13:00</a>
-                        <a href="modal" class="time_button" data-modal>14:00</a>
-                        <a href="modal" class="time_button" data-modal>15:00</a>
-                        <a href="modal" class="time_button" data-modal>16:00</a>
-                        <a href="modal" class="time_button" data-modal>17:00</a>
-                        <a href="modal" class="time_button" data-modal>18:00</a>
-                        <a href="modal" class="time_button" data-modal>19:00</a>
-                        <a href="modal" class="time_button" data-modal>20:00</a>
+                        <a href="modal?name={{name}}" class="time_button" data-modal>10:00</a>
+                        <a href="modal?name={{name}}" class="time_button" data-modal>11:00</a>
+                        <a href="modal?name={{name}}" class="time_button" data-modal>12:00</a>
+                        <a href="modal?name={{name}}" class="time_button" data-modal>13:00</a>
+                        <a href="modal?name={{name}}" class="time_button" data-modal>14:00</a>
+                        <a href="modal?name={{name}}" class="time_button" data-modal>15:00</a>
+                        <a href="modal?name={{name}}" class="time_button" data-modal>16:00</a>
+                        <a href="modal?name={{name}}" class="time_button" data-modal>17:00</a>
+                        <a href="modal?name={{name}}" class="time_button" data-modal>18:00</a>
+                        <a href="modal?name={{name}}" class="time_button" data-modal>19:00</a>
+                        <a href="modal?name={{name}}" class="time_button" data-modal>20:00</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 {{/each}}
-<!--
+
 <div class="load_more">
-    <button class="load_more_button">Загрузить еще</button>
+    <a class="load_more_button">Загрузить еще</a>
 </div>
- <div class="reg_success" >
-    <img class="reg_success_paw" height="53"
-         src="public/images/Paw.svg"
-         width="66.5">
-    <div class="reg_success_text">
-        <h3 class="reg_success_text_header">
-            Вы успешно записались на консультацию
-        </h3>
-        <p class="reg_success_text_bottom">
-            В течение 10 минут наш специалист перезвонит вам
-        </p>
-    </div>
-    <form>
-        <input id="reg_success  _close_button" src="images/close_icon.png" type="image">
-    </form>
-</div>
--->

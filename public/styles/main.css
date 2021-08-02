@@ -15,9 +15,8 @@ body {
 }
 
 .rct1_top {
-    display: block;
-    width: 1240px;
-    margin: 10px auto;
+    margin-left: 80px;
+    margin-top: 15px;
     font-weight: 500;
     font-size: 24px;
     line-height: 28px;
@@ -25,9 +24,9 @@ body {
 }
 
 .rct1_bottom {
+    margin-left: 80px;
     display: block;
-    width: 1240px;
-    margin: 10px auto;
+    margin-top: -20px;
     font-size: 16px;
     line-height: 24px;
     color: #FC842D;
@@ -54,24 +53,6 @@ body {
     font-size: 18px;
 }
 
-@media screen and (max-width: 900px) {
-    .vector_1 {
-        display: flex;
-        width: 600px;
-        margin-top: 148px;
-        flex-direction: column;
-    }
-
-    .frame_132 {
-        margin-top: 40px;
-        margin-left: 100px;
-    }
-
-    .cat {
-        margin-left: 100px;
-    }
-}
-
 .f132_list_item_top {
     display: flex;
     flex-direction: row;
@@ -84,7 +65,7 @@ body {
 
 .gray_text {
     color: #88776B;
-    margin-left: 70px;
+    margin-left: 68px;
 }
 
 .f132_icon {
@@ -101,27 +82,6 @@ body {
     position: absolute;
     top: 202px;
     right: 35px;
-}
-
-@media screen and (max-width: 1280px) and (min-width: 901px) {
-    .vector_1 {
-        width: 855px;
-    }
-
-    .cat {
-        width: 385px;
-        height: 315px;
-    }
-
-    .frame_132 {
-        font-size: 15px;
-    }
-
-    #background_paw_2 {
-        right: -10px;
-        width: 90px;
-        height: 90px;
-    }
 }
 
 .rectangle_4 {
@@ -144,23 +104,6 @@ body {
     margin-top: -20px;
 }
 
-@media screen and (max-width: 900px) {
-    .rectangle_4 {
-        display: flex;
-        flex-direction: column;
-        width: 620px;
-        height: auto;
-    }
-
-    #Dog {
-        display: none;
-    }
-
-    .rct4_content {
-        margin-left: 24px
-    }
-}
-
 .rct4_header {
     font-size: 21px;
     line-height: 32px;
@@ -180,6 +123,26 @@ body {
     font-size: 14px;
 }
 
+.show {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FC842D;
+    border-radius: 16px;
+    width: 100px;
+    height: 42px;
+    outline: none;
+    border: none;
+    color: #FFFFFF;
+    font-size: 14px;
+    text-decoration: none;
+}
+@media screen and (min-width: 501px) {
+    .show {
+        display: none;
+    }
+}
+
 .messenger_selector {
     display: flex;
     cursor: pointer;
@@ -196,16 +159,6 @@ body {
 .messenger_name {
     margin-right: 15px;
     font-size: 15px;
-}
-
-@media screen and (max-width: 1280px) and (min-width: 901px) {
-    .messenger_name {
-        font-size: 13px;
-    }
-
-    .messenger_selector {
-        margin-bottom: 7px;
-    }
 }
 
 .registration {
@@ -236,6 +189,7 @@ body {
     color: #FFFFFF;
     border: 0;
     font-size: 14px;
+    cursor: pointer;
 }
 
 #Dog {
@@ -284,100 +238,11 @@ body {
     overflow: hidden;
 }
 
-@media screen and (max-width: 1280px) and (min-width: 901px) {
-    .rectangle_4 {
-        width: 855px;
-        height: 358px;
-        padding: 25px;
-    }
-
-    .rct4_content {
-        max-width: 400px;
-        margin-left: 40px;
-        margin-top: -20px;
-    }
-
-    .rct4_header {
-        font-size: 17px;
-        margin-bottom: 15px;
-    }
-
-    .rct4_text_bottom {
-        font-size: 12px;
-    }
-
-    .rct4_gray_text {
-        font-size: 12px;
-    }
-
-    .rct4_attention {
-        width: 348px;
-        font-size: 13px;
-        margin-bottom: 21px;
-    }
-
-    #reg_name, #reg_tel {
-        margin-bottom: 8px;
-        height: 17px;
-        font-size: 14px;
-    }
-
-    #Dog {
-        height: 301px;
-        width: 385px;
-        margin-top: 65px;
-    }
-
-    #background_paw_7 {
-        left: 20px;
-        width: 35px;
-        height: 35px;
-    }
-
-    #background_paw_6 {
-        left: 10px;
-        width: 35px;
-        height: 35px;
-    }
-
-    #background_paw_3 {
-        top: 185px;
-        right: 40px;
-    }
-
-    #background_paw_4 {
-        top: 240px;
-        right: 50px;
-    }
-
-    #background_paw_5 {
-        top: 280px;
-    }
-}
-
-@media screen and (max-width: 900px) {
-    #background_paw_3, #background_paw_4 {
-        right: 11px;
-    }
-
-    #background_paw_6, #background_paw_7 {
-        left: 20px;
-    }
-
-}
-
 .region_selector {
     display: block;
     width: 1030px;
     margin-left: auto;
     margin-right: auto;
-}
-
-@media screen and (max-width: 900px) {
-    .region_selector {
-        margin-left: 40px;
-        margin-right: 40px;
-    }
 }
 
 .region_selector_header {
@@ -414,12 +279,6 @@ body {
     color: #FFFFFF;
 }
 
-@media screen and (max-width: 1280px) and (min-width: 901px) {
-    .region_selector {
-        width: 855px;
-    }
-}
-
 .product_card {
     box-sizing: border-box;
     display: flex;
@@ -439,30 +298,6 @@ body {
     height: 100%;
     right: 515px;
     top: 0;
-}
-
-@media screen and (max-width: 1280px) and (min-width: 901px) {
-    .product_card {
-        width: 855px;
-        padding: 35px 20px 20px 20px;
-    }
-
-    .product_card_vertical_line {
-        right: 460px;
-    }
-}
-
-@media screen and (max-width: 900px) {
-    .product_card {
-        display: flex;
-        flex-direction: column;
-        width: 620px;
-        height: auto;
-    }
-
-    .product_card_vertical_line {
-        display: none;
-    }
 }
 
 .card_info {
@@ -538,29 +373,6 @@ body {
     line-height: 24px;
 }
 
-@media screen and (max-width: 1280px) and (min-width: 901px) {
-    .recommendations {
-        margin-top: 17px;
-        font-size: 15px;
-        padding: 0 10px;
-    }
-
-    .clinic_tel {
-        margin-top: 17px;
-        font-size: 15px;
-        max-width: 170px;
-    }
-
-    .clinic_location {
-        font-size: 15px;
-    }
-
-    .clinic_description {
-        margin-top: 13px;
-        font-size: 15px;
-    }
-}
-
 .product_card_right {
     position: relative;
 }
@@ -571,11 +383,13 @@ body {
     top: 125px;
     width: 105%;
 }
+#horizontal_line_mobile {
+    display: none;
+}
 
-@media screen and (max-width: 900px) {
-    .product_card_horizontal_line {
-        display: none;
-    }
+.rating_num {
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .product_card_right_top {
@@ -596,11 +410,9 @@ body {
     margin-bottom: 15px;
 }
 
-
 .price {
     font-weight: bold;
 }
-
 
 .all_services {
     display: flex;
@@ -619,27 +431,6 @@ body {
     transform: translateX(-30px);
 }
 
-@media screen and (max-width: 1280px) and (min-width: 901px) {
-    .price_list {
-        width: 249px;
-    }
-
-    .service {
-        width: 249px;
-    }
-
-    .all_services {
-        transform: translateX(-30px);
-    }
-
-    .all_services {
-        height: 40px;
-        width: 100px;
-        font-size: 12px;
-    }
-}
-
-
 .selector_text {
     margin-top: 20px;
     font-size: 18px;
@@ -651,7 +442,17 @@ body {
     flex-direction: row;
     align-items: center;
 }
-
+#slider_right {
+    display: none;
+    transform: rotate(90deg);
+    width: 32px;
+    height: 32px;
+}
+#slider_left {
+    display: none;
+    width: 32px;
+    height: 32px;
+}
 .date_button {
     width: 56px;
     height: 72px;
@@ -660,6 +461,7 @@ body {
     border-radius: 8px 8px 0 0;
     outline: none;
     position: relative;
+    cursor: pointer;
 }
 
 .first_date_button {
@@ -675,6 +477,10 @@ body {
 .date_button:focus, .first_date_button:focus {
     background-color: #F5F2F0;
     height: 72px;
+}
+
+#horizontal_line_mobile_1, #horizontal_line_mobile_3 {
+    display: none;
 }
 
 .next_date {
@@ -721,31 +527,17 @@ body {
     color: #FFFFFF;
 }
 
-@media screen and (max-width: 1280px) and (min-width: 901px) {
-    .selector_text {
-        font-size: 16px;
-        margin-top: 17px;
-    }
-
-    .time_button {
-        width: 54px;
-        height: 32px;
-        font-size: 13px;
-    }
-
-    .time_selector {
-        width: 390px;
-        height: 108px;
-        padding: 10px 10px 6px 10px;
-    }
-}
-
 .load_more {
     display: flex;
     justify-content: center;
+    margin-top: 20px;
 }
 
 .load_more_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
     background-color: #FC842D;
     color: #FFFFFF;
     border-radius: 16px;
@@ -755,6 +547,7 @@ body {
     height: 48px;
     margin-bottom: 46px;
     outline: none;
+    cursor: pointer;
 }
 
 .reg_success {
@@ -762,8 +555,9 @@ body {
     position: relative;
     align-items: center;
     display: flex;
-    width: 1240px;
-    height: 160px;
+    width: 1030px;
+    height: 130px;
+    border: 1px solid #E7E2E0;
     background-color: #FFFFFF;
     margin: 50px auto;
     box-sizing: border-box;
@@ -777,18 +571,11 @@ body {
 
 #reg_success_close_button {
     position: absolute;
-    top: 32px;
-    right: 32px;
+    top: 22px;
+    right: 22px;
     width: 40px;
     height: 40px;
     outline: none;
-}
-
-@media screen and (max-width: 900px) {
-    .reg_success {
-        width: 600px;
-        padding-left: 20px;
-    }
 }
 
 .modal_window {
@@ -803,27 +590,13 @@ body {
     padding: 40px 108px;
 }
 
-@media screen and (max-width: 1280px) and (min-width: 901px) {
-    .modal_window {
-        width: 1062px;
-        padding: 33px 89px;
-    }
-}
-
 .modal_window_main {
     display: flex;
     flex-direction: row;
 }
 
-@media screen and (max-width: 900px) {
-    .modal_window {
-        width: 700px;
-        height: auto;
-    }
-
-    .modal_window_main {
-        flex-direction: column;
-    }
+.mobile_recommendations {
+    display: none;
 }
 
 .frameGeo {
@@ -835,19 +608,6 @@ body {
 .map {
     width: 484px;
     height: 200px;
-}
-
-@media screen and (max-width: 1280px) and (min-width: 901px) {
-    .frameGeo {
-        margin-top: 37px;
-        width: 401px;
-        height: 239px;
-    }
-
-    .map {
-        width: 401px;
-        height: 166px;
-    }
 }
 
 .clinic_contacts {
@@ -895,7 +655,7 @@ body {
 .modal_reg_header {
     display: flex;
     margin-top: 48px;
-    font-size: 24px;
+    font-size: 18px;
     align-self: flex-start;
 }
 
@@ -970,6 +730,14 @@ body {
     margin-top: 16px;
 }
 
+#horizontal_line_mobile_4 {
+    display: none;
+}
+
+.slider_icon {
+    display: none;
+}
+
 #date-time_selector_modal {
     width: 445px;
     height: 284px;
@@ -991,6 +759,7 @@ body {
     color: #FFFFFF;
     font-size: 16px;
     margin-top: 16px;
+    cursor: pointer;
 }
 
 .cancel_button {
@@ -1004,17 +773,12 @@ body {
     font-size: 16px;
     margin-left: 12px;
     margin-top: 16px;
+    cursor: pointer;
 }
 
 .modal_window_right {
     width: 391px;
     margin-left: 54px;
-}
-
-@media screen and (max-width: 900px) {
-    .modal_window_right {
-        margin-left: 0;
-    }
 }
 
 .clinic_services_modal {
@@ -1064,16 +828,6 @@ body {
     align-items: center;
 }
 
-@media screen and (max-width: 1280px) and (min-width: 901px) {
-    .services_list_modal {
-        width: 435px;
-    }
-
-    .services_list_line {
-        width: 400px;
-    }
-}
-
 .close-modal {
     position: absolute;
     top: 40px;
@@ -1086,13 +840,6 @@ body {
 
 .vk_window {
     overflow: hidden;
-}
-
-@media screen and (max-width: 1280px) and (min-width: 901px) {
-    .vk_window {
-        width: 882px;
-        height: 747px;
-    }
 }
 
 .reg_success_modal {
@@ -1210,6 +957,7 @@ body {
     color: #FFFFFF;
     outline: none;
     border: none;
+    cursor: pointer;
 }
 
 .no_button {
@@ -1220,11 +968,7 @@ body {
     background-color: #FFFFFF;
     outline: none;
     color: #351D0E;
-}
-
-.rating_num {
-    font-size: 20px;
-    font-weight: bold;
+    cursor: pointer;
 }
 
 section {
@@ -1286,4 +1030,731 @@ section.precise .fill .rating .value:before {
 
 section.precise .fill .rating .bg:before {
     content: "";
+}
+
+.reg_window_header {
+    margin-top: 16px;
+    margin-left: 16px;
+}
+.reg_window_header_upper {
+    font-size: 18px;
+    color: #FC842D;
+}
+.reg_window_header_bottom {
+    font-size: 14px;
+    color: #88776B;
+}
+.reg_window_main {
+    margin-top: 40px;
+    margin-left: 6px;
+    font-size: 14px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/*  adaptive layout for 720p resolution */
+
+@media screen and (max-width: 1280px) and (min-width: 901px) {
+    .vector_1 {
+        width: 855px;
+    }
+
+    .cat {
+        width: 385px;
+        height: 315px;
+    }
+
+    .frame_132 {
+        font-size: 15px;
+    }
+
+    #background_paw_2 {
+        right: -10px;
+        width: 90px;
+        height: 90px;
+    }
+
+    .messenger_name {
+        font-size: 13px;
+    }
+
+    .messenger_selector {
+        margin-bottom: 7px;
+    }
+    .rectangle_4 {
+        width: 855px;
+        height: 358px;
+        padding: 25px;
+    }
+
+    .rct4_content {
+        max-width: 400px;
+        margin-left: 40px;
+        margin-top: -20px;
+    }
+
+    .rct4_header {
+        font-size: 17px;
+        margin-bottom: 15px;
+    }
+
+    .rct4_text_bottom {
+        font-size: 12px;
+    }
+
+    .rct4_gray_text {
+        font-size: 12px;
+    }
+
+    .rct4_attention {
+        width: 348px;
+        font-size: 13px;
+        margin-bottom: 21px;
+    }
+
+    #reg_name, #reg_tel {
+        margin-bottom: 8px;
+        height: 17px;
+        font-size: 14px;
+    }
+
+    #Dog {
+        height: 301px;
+        width: 385px;
+        margin-top: 65px;
+    }
+
+    #background_paw_7 {
+        left: 20px;
+        width: 35px;
+        height: 35px;
+    }
+
+    #background_paw_6 {
+        left: 10px;
+        width: 35px;
+        height: 35px;
+    }
+
+    #background_paw_3 {
+        top: 185px;
+        right: 40px;
+    }
+
+    #background_paw_4 {
+        top: 240px;
+        right: 50px;
+    }
+
+    #background_paw_5 {
+        top: 280px;
+    }
+
+    .region_selector {
+        width: 855px;
+    }
+
+    .product_card {
+        width: 855px;
+        padding: 35px 20px 20px 20px;
+    }
+
+    .product_card_vertical_line {
+        right: 460px;
+    }
+
+    .recommendations {
+        margin-top: 17px;
+        font-size: 15px;
+        padding: 0 10px;
+    }
+
+    .clinic_tel {
+        margin-top: 17px;
+        font-size: 15px;
+        max-width: 170px;
+    }
+
+    .clinic_location {
+        font-size: 15px;
+    }
+
+    .clinic_description {
+        margin-top: 13px;
+        font-size: 15px;
+    }
+
+    .price_list {
+        width: 249px;
+    }
+
+    .service {
+        width: 249px;
+    }
+
+    .all_services {
+        transform: translateX(-30px);
+    }
+
+    .all_services {
+        height: 40px;
+        width: 100px;
+        font-size: 12px;
+    }
+    .selector_text {
+        font-size: 16px;
+        margin-top: 17px;
+    }
+
+    .time_button {
+        width: 54px;
+        height: 32px;
+        font-size: 13px;
+    }
+
+    .time_selector {
+        width: 390px;
+        height: 108px;
+        padding: 10px 10px 6px 10px;
+    }
+    .reg_success {
+        width: 855px;
+    }
+    .modal_window {
+        width: 1062px;
+        padding: 33px 89px;
+    }
+    .frameGeo {
+        margin-top: 37px;
+        width: 401px;
+        height: 239px;
+    }
+
+    .map {
+        width: 401px;
+        height: 166px;
+    }
+    .services_list_modal {
+        width: 435px;
+    }
+
+    .services_list_line {
+        width: 400px;
+    }
+
+    .vk_window {
+        width: 882px;
+        height: 747px;
+    }
+}
+
+/* adaptive layout for tablets */
+
+@media screen and (max-width: 900px) and (min-width: 501px) {
+    .vector_1 {
+        display: flex;
+        width: 600px;
+        margin-top: 148px;
+        flex-direction: column;
+    }
+
+    .frame_132 {
+        margin-top: 40px;
+        margin-left: 100px;
+    }
+
+    .cat {
+        margin-left: 100px;
+        width: 400px;
+        height: 325px;
+    }
+
+    .rectangle_4 {
+        display: flex;
+        flex-direction: column;
+        width: 620px;
+        height: auto;
+    }
+
+    #Dog {
+        display: none;
+    }
+
+    .rct4_content {
+        margin-left: 24px
+    }
+
+    #background_paw_3, #background_paw_4 {
+        right: 11px;
+    }
+
+    #background_paw_6, #background_paw_7 {
+        left: 20px;
+    }
+
+    .region_selector {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .product_card {
+        display: flex;
+        flex-direction: column;
+        width: 620px;
+        height: auto;
+    }
+
+    .product_card_vertical_line {
+        display: none;
+    }
+
+    .reg_success {
+        width: 600px;
+        padding-left: 20px;
+    }
+
+    .modal_window {
+        width: 700px;
+        height: auto;
+    }
+
+    .modal_window_main {
+        flex-direction: column;
+    }
+
+    .modal_window_right {
+        margin-left: 0;
+    }
+}
+@media screen and (max-width: 900px) {
+    .product_card_horizontal_line {
+        display: none;
+    }
+}
+
+/* adaptive layout for smartphones */
+
+@media screen and (max-width: 500px) {
+    .vector_1 {
+        display: flex;
+        width: 350px;
+        margin-top: 80px;
+        flex-direction: column;
+        margin-left: 15px;
+    }
+
+    .cat {
+        width: 300px;
+        height: 250px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .frame_132 {
+        margin-left: 15px;
+    }
+
+    .rct1_top, .rct1_bottom {
+        margin-left: 10px;
+    }
+
+    .f132_list_item {
+        font-size: 16px;
+    }
+    .f132_text_top {
+        margin-top: 15px;
+    }
+
+    .rectangle_4 {
+        width: 310px;
+        height: auto;
+        flex-direction: column;
+        padding: 16px;
+    }
+    .rct4_header {
+        font-size: 16px;
+        line-height: 1;
+        margin-left: -40px;
+    }
+    .rct4_gray_text {
+        margin-left: -40px;
+    }
+    .rct4_text_bottom {
+        margin-left: -40px;
+    }
+    .rct4_messenger_selector_text {
+        margin-left: -40px;
+        margin-bottom: 0;
+    }
+    .registration {
+        margin-top: 5px;
+        margin-left: -40px;
+        font-size: 14px;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    #Dog {
+        width: 189px;
+        height: 148px;
+        margin: 0 auto -35px auto;
+    }
+    #rct4_close_button {
+        top: 15px;
+        right: 12px;
+    }
+    #background_paw_7,#background_paw_4, #background_paw_5 {
+        display: none;
+    }
+    #background_paw_6 {
+        display: none;
+    }
+    #background_paw_3 {
+        top: 240px;
+        right: 5px;
+    }
+
+    .region_selector {
+        display: flex;
+        flex-direction: column;
+        width: 280px;
+        padding: 16px;
+    }
+    .region_selector_header {
+        font-size: 24px;
+        width: 250px;
+    }
+    .region_selector_bottom {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .region_button {
+        width: 143px;
+        height: 39px;
+        margin-bottom: 20px;
+    }
+
+    .product_card {
+        display: flex;
+        margin-top: 0;
+        flex-direction: column;
+        width: 288px;
+        padding: 16px;
+    }
+    .recommendations {
+        display: none;
+    }
+    .clinic_name {
+        font-size: 18px;
+    }
+    .clinic_logo {
+        width: 48px;
+        height: 48px;
+        margin-right: 12px;
+    }
+    .clinic_working_hours {
+        font-size: 14px;
+        width: 135px;
+    }
+    .rating_num {
+        font-size: 16px;
+    }
+    .clinic_tel, .address {
+        font-size: 14px;
+    }
+    .clinic_tel {
+        width: 160px;
+        margin-top: 16px;
+    }
+    .address {
+        margin-top: 12px;
+        margin-bottom: 0;
+    }
+    .product_card_right_top {
+        display: flex;
+        flex-direction: column;
+    }
+    .service {
+        width: 256px;
+        margin-bottom: 15px;
+    }
+    .price, .name_of_service {
+        font-size: 14px;
+    }
+    .clinic_description {
+        display: none;
+    }
+    .date-time_selector {
+        margin-left: 10px;
+    }
+    .selector_text {
+        font-size: 14px;
+    }
+    .date_selector {
+        margin-bottom: 12px;
+        touch-action: pan-x;
+        overflow-x: scroll;
+    }
+    .date_button {
+        width: 48px;
+        height: 48px;
+        background: #FFFFFF;
+        border-radius: 52px;
+        margin-right: 12px;
+        border: 1px solid #E7E2E0;
+        white-space: nowrap;
+    }
+    .date_button:focus {
+        background: #F5F2F0;
+        height: 48px;
+    }
+    .time_selector {
+        touch-action: pan-x;
+        width: 250px;
+        overflow-x: scroll;
+        background-color: #FFFFFF;
+        padding: 0;
+        margin-left: 0;
+        flex-wrap: nowrap;
+        height: auto;
+    }
+    .time_button {
+        border: 1px solid #E7E2E0;
+        width: 68px;
+        height: 40px;
+    }
+    .all_services {
+        margin-top: 24px;
+        width: 112px;
+        height: 42px;
+        font-size: 14px;
+        transform: translateX(-50px);
+    }
+    .product_card_vertical_line {
+        display: none;
+    }
+
+    .reg_success {
+        flex-direction: column;
+        width: 280px;
+        height: 280px;
+        text-align: center;
+        padding: 25px;
+    }
+    .reg_success_paw {
+        align-self: center;
+        width: 50px;
+        height: 50px;
+    }
+
+    .modal_window {
+        width: 320px;
+        margin: -30px;
+        padding: 16px;
+    }
+    .modal_window_main {
+        flex-direction: column;
+    }
+    .modal_window_right {
+        margin-left: 16px;
+        width: 280px;
+    }
+    .close-modal {
+        top: 16px;
+        right: 16px;
+    }
+    .frameGeo {
+        width: 288px;
+    }
+    .mobile_recommendations {
+        display: flex;
+        width: 288px;
+        height: 52px;
+        font-size: 14px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 8px 16px;
+        background: #F5F2F0;
+        border-radius: 15px;
+        margin-top: 24px;
+        box-sizing: border-box;
+    }
+    .map {
+        width: 288px;
+        height: 160px;
+    }
+    .clinic_contacts {
+        flex-direction: column;
+        width: 154px;
+        height: 104px;
+    }
+    .clinic_tel_modal_top, .clinic_address_modal_top {
+        margin-top: 9px;
+        font-size: 12px;
+        text-align: left;
+    }
+    .tel_number_modal, .address_modal {
+        font-size: 14px;
+    }
+    .clinic_tel_modal_bottom {
+        width: 157px;
+    }
+    .clinic_address_modal_bottom {
+        width: max-content;
+    }
+    #location_icon_modal {
+        margin-right: 10px;
+    }
+    .slider_form_reg {
+        display: flex;
+        width: 285px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 40px;
+    }
+    .modal_reg_header {
+        cursor: pointer;
+        margin-top: 0;
+    }
+    .slider_icon {
+        display: inherit;
+        cursor: pointer;
+        margin-top: 0;
+        transform: rotate(180deg);
+    }
+    .date-time_selector_buttons {
+        width: 288px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #date-time_selector_modal {
+        height: auto;
+        width: 260px;
+    }
+    #date_selector_modal {
+        width: 260px;
+        overflow-x: scroll;
+        flex-wrap: nowrap;
+    }
+    #time_selector_modal {
+        width: 260px;
+        overflow-x: scroll;
+        flex-wrap: nowrap;
+    }
+    .modal_reg_form {
+        width: 288px;
+    }
+    .reg_pole_modal {
+        width: 288px;
+        font-size: 14px;
+    }
+    .reg_problem_modal {
+        width: 288px;
+        font-size: 14px;
+    }
+    .reg_submit_modal {
+        width: 200px;
+        font-size: 14px;
+    }
+    .reg_success_modal {
+        width: 288px;
+    }
+    .reg_success_modal_header {
+        font-size: 16px;
+    }
+    .reg_success_modal_bottom {
+        font-size: 14px;
+    }
+    .slider_form_services {
+        display: flex;
+        width: 270px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 16px;
+    }
+    .clinic_services_modal {
+        display: flex;
+        align-self: flex-start;
+        margin-top: 10px;
+        width: 288px;
+    }
+    .services_modal_header {
+        display: flex;
+        align-self: flex-start;
+        font-size: 18px;
+        text-align: left;
+        cursor: pointer;
+        margin-left: -15px;
+    }
+    .services_list_modal {
+        width: 288px;
+        margin-left: -15px;
+    }
+    .services_list_item_text {
+        align-items: flex-start;
+    }
+    .services_list_line {
+        width: 288px;
+    }
+    #horizontal_line_mobile_3 {
+        display: inherit;
+        transform: translateX(-86px);
+        width: 285px;
+        color: #E6E2DF;
+        border: 1px solid #E6E2DF;
+    }
+    #horizontal_line_mobile_1 {
+        display: inherit;
+        transform: translateX(-16px);
+        width: 285px;
+        color: #E6E2DF;
+        border: 1px solid #E6E2DF;
+        margin-top: 16px;
+    }
+    #horizontal_line_mobile_4 {
+        display: inherit;
+        transform: translateX(-32px);
+        width: 318px;
+        color: #E6E2DF;
+        border: 1px solid #E6E2DF;
+        margin-top: 16px;
+    }
+    .modal_mobile {
+        background-color: #FFFFFF;
+    }
+    .reg_window_main {
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    .messenger_selector {
+        font-size: 14px;
+        margin-left: -20px;
+    }
+    .messenger_name {
+        font-size: 13px;
+        margin-right: 8px;
+    }
+    .messenger_icon {
+        width: 20px;
+        height: 20px;
+    }
+    #reg_name, #reg_tel {
+        width: 220px;
+        height: 48px;
+        max-height: 48px;
+        box-sizing: border-box;
+    }
+    #reg_submit {
+        height: 44px;
+        width: 160px;
+    }
+    .save_button, .cancel_button {
+        font-size: 14px;
+        width: 130px;
+        height: 40px;
+    }
 }

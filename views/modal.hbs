@@ -1,4 +1,5 @@
 {{#with data}}
+    <script src="scripts/index.js"></script>
     <div class="modal_window_main">
         <div class="modal_window_left">
             <div class="card_info">
@@ -19,6 +20,10 @@
                     </div>
                 </div>
             </div>
+            <div class="mobile_recommendations">
+                <img height="14" id="Paw" src="images/Paw.svg" width="17">
+                <p class="rec_text">{{yandex.rating_percent}}% пользователей рекомендуют клинику</p>
+            </div>
             <div class="frameGeo">
                 <iframe class="map" frameborder="0" src="{{yandex.map}}"></iframe>
                 <div class="clinic_contacts">
@@ -32,21 +37,24 @@
                     <div class="clinic_address_modal">
                         <p class="clinic_address_modal_top">Адрес вет.клиники</p>
                         <div class="clinic_address_modal_bottom">
-                            <img class="location_icon" src="images/Location.svg" width="17" height="20">
+                            <img class="location_icon" id="location_icon_modal" src="images/Location.svg" width="17" height="20">
                             <p class="address_modal">{{address}}</p>
                         </div>
                     </div>
                 </div>
             </div>
+            <form class="slider_form_reg">
+               <a class="modal_reg_header">Запись на приём</a>
+               <input type="image" src="images/Slider_icon.svg" class="slider_icon" id="slider_icon_reg" >
+            </form>
             <div class="modal_registration">
-                <h3 class="modal_reg_header">Запись на приём</h3>
                 <p class="modal_reg_text">На время и дату</p>
                 <div class="modal_reg_date-time">  <!--скрыто-->
                     <p class="modal_reg_date-time_text">Понедельник, 8 марта, с 20:00 до 21,00</p>
                     <a class="modal_reg_date-time_ref" href="https://google.com">Изменить</a>
                 </div>
                 <div class="date-time_selector" id="date-time_selector_modal">
-                    <form class="date_selector">
+                    <form class="date_selector" id="date_selector_modal">
                         <button type="button" class="date_button">Вт<br>9</button>
                         <button type="button" class="date_button">Ср<br>10</button>
                         <button type="button" class="date_button" value="next">Чт<br>11</button>
@@ -93,8 +101,12 @@
             </div>
         </div>
         <div class="modal_window_right">
+            <hr id="horizontal_line_mobile_4"/>
             <div class="clinic_services_modal">
-                <h3 class="services_modal_header">Услуги вет. клиники</h3>
+                <form class="slider_form_services">
+                    <a class="services_modal_header">Услуги вет. клиники</a>
+                    <input type="image" src="images/Slider_icon.svg" class="slider_icon" id="slider_icon_services" >
+                </form>
             </div>
             <div class="services_list_modal">
                 {{#each services}}
