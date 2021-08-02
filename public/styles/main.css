@@ -1687,7 +1687,6 @@ section.precise .fill .rating .bg:before {
         display: inherit;
         cursor: pointer;
         margin-top: 0;
-        transform: rotate(180deg);
     }
 
     .date-time_selector_buttons {
