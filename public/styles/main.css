@@ -110,6 +110,10 @@ body {
     color: #FC842D;
 }
 
+.brake_1 {
+    display: none;
+}
+
 .rct4_text_bottom {
     font-size: 14px;
 }
@@ -157,6 +161,10 @@ body {
     height: 25px;
 }
 
+.messenger_radio {
+    -webkit-appearance: radio;
+}
+
 .messenger_name {
     margin-right: 15px;
     font-size: 15px;
@@ -191,6 +199,9 @@ body {
     border: 0;
     font-size: 14px;
     cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
 #Dog {
@@ -746,7 +757,6 @@ body {
 #date-time_selector_modal {
     width: 445px;
     height: 284px;
-
 }
 
 #time_selector_modal {
@@ -1262,9 +1272,9 @@ section.precise .fill .rating .bg:before {
     }
 }
 
-/* adaptive layout for tablets */
+/* adaptive layout for large tablets */
 
-@media screen and (max-width: 900px) and (min-width: 501px) {
+@media screen and (max-width: 900px) and (min-width: 601px) {
     .vector_1 {
         display: flex;
         width: 600px;
@@ -1347,15 +1357,16 @@ section.precise .fill .rating .bg:before {
     }
 }
 
-/* adaptive layout for smartphones */
+/* adaptive layout for smartphones and small tablets */
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
     .vector_1 {
         display: flex;
         width: 350px;
         margin-top: 80px;
         flex-direction: column;
-        margin-left: 15px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .cat {
@@ -1392,6 +1403,10 @@ section.precise .fill .rating .bg:before {
         font-size: 16px;
         line-height: 1;
         margin-left: -40px;
+    }
+
+    .brake_1 {
+        display: inherit;
     }
 
     .rct4_gray_text {
