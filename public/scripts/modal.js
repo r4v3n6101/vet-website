@@ -25,23 +25,27 @@ $(function () {
         $('.reg_success_modal').slideUp();
     });
 
-    $('.modal_reg_header').click(function () {
+    $('.modal_reg_header').click(function (event) {
         $('.modal_registration').slideToggle('slow');
-        toggleRotate($('#slider_icon_reg'))
+        toggleRotate($('#slider_icon_reg'));
+        event.preventDefault();
     });
 
-    $('#slider_icon_reg').click(function () {
+    $('#slider_icon_reg').click(function (event) {
         $('.modal_registration').slideToggle('slow');
-        toggleRotate($('#slider_icon_reg'))
+        toggleRotate($('#slider_icon_reg'));
+        event.preventDefault();
     });
 
-    $('.services_modal_header').click(function () {
+    $('.services_modal_header').click(function (event) {
         $('.services_list_modal').slideToggle('slow');
         toggleRotate($('#slider_icon_services'));
+        event.preventDefault();
     });
 
-    $('#slider_icon_services').click(function () {
+    $('#slider_icon_services').click(function (event) {
         $('.services_list_modal').slideToggle('slow');
-        toggleRotate($('#slider_icon_services'))
+        toggleRotate($('#slider_icon_services'));
+        event.preventDefault();
     });
 })
