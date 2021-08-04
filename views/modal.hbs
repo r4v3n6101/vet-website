@@ -46,13 +46,15 @@
             </div>
             <form class="slider_form_reg">
                 <a class="modal_reg_header">Запись на приём</a>
-                <input type="image" src="images/Slider_icon.svg" class="slider_icon" id="slider_icon_reg">
+                <a type="image" class="slider_icon">
+                    <img src="images/Slider_icon.svg" id="slider_icon_reg">
+                </a>
             </form>
             <div class="modal_registration">
                 <p class="modal_reg_text">На время и дату</p>
-                <div class="modal_reg_date-time">  <!--скрыто-->
+                <div class="modal_reg_date-time">
                     <p class="modal_reg_date-time_text">Понедельник, 8 марта, с 20:00 до 21,00</p>
-                    <a class="modal_reg_date-time_ref" href="https://google.com">Изменить</a>
+                    <a class="modal_reg_date-time_ref">Изменить</a>
                 </div>
                 <div class="date-time_selector" id="date-time_selector_modal">
                     <form class="date_selector" id="date_selector_modal">
@@ -75,10 +77,6 @@
                         <button type="button" class="time_button">18:00</button>
                         <button type="button" class="time_button">19:00</button>
                     </form>
-                    <form class="date-time_selector_buttons">
-                        <input type="button" class="save_button" value="Сохранить">
-                        <input type="button" class="cancel_button" value="Отмена">
-                    </form>
                 </div>
                 <form class="modal_reg_form">
                     <input type="text" id="reg_name_modal" class="reg_pole_modal" placeholder="Ваше имя">
@@ -89,7 +87,6 @@
                     <input type="submit" class="reg_submit_modal" value="Записаться на приём">
                 </form>
                 <div class="reg_success_modal">
-                    <!--скрыто, чтобы отобразить измени в style.css параметр display с none на flex-->
                     <img height="40" id="reg_success_modal_paw" src="images/Paw.svg" width="40">
                     <p class="reg_success_modal_header">Ваша заявка успешно принята</p>
                     <p class="reg_success_modal_bottom">В течение 15 минут вам перезвонит специалист
@@ -106,7 +103,9 @@
             <div class="clinic_services_modal">
                 <form class="slider_form_services">
                     <a class="services_modal_header">Услуги вет. клиники</a>
-                    <input type="image" src="images/Slider_icon.svg" class="slider_icon" id="slider_icon_services">
+                    <a type="image" class="slider_icon">
+                        <img src="images/Slider_icon.svg" id="slider_icon_services">
+                    </a>
                 </form>
             </div>
             <div class="services_list_modal">
