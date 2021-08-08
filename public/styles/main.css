@@ -163,6 +163,8 @@ body {
 
 .messenger_radio {
     -webkit-appearance: radio;
+    width: 13px;
+    height: 13px;
 }
 
 .messenger_name {
@@ -370,6 +372,10 @@ body {
     font-size: 18px;
 }
 
+.tel_number {
+    color: black;
+}
+
 .clinic_location {
     display: flex;
     justify-content: space-between;
@@ -525,7 +531,7 @@ body {
     border: 0;
     width: 65px;
     height: 39px;
-    margin-left: 7px;
+    margin-right: 7px;
     border-radius: 8px;
     font-size: 14px;
     font-weight: bold;
@@ -666,6 +672,7 @@ body {
 
 .address_modal, .tel_number_modal {
     font-size: 18px;
+    color: black;
 }
 
 .modal_reg_header {
@@ -701,7 +708,7 @@ body {
 }
 
 .modal_reg_form {
-    margin-top: 40px;
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     width: 400px;
@@ -744,6 +751,9 @@ body {
     border-radius: 16px;
     font-size: 16px;
     margin-top: 16px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
 #horizontal_line_mobile_4 {
@@ -756,7 +766,7 @@ body {
 
 #date-time_selector_modal {
     width: 445px;
-    height: 284px;
+    height: auto;
 }
 
 #time_selector_modal {
