@@ -1,3 +1,4 @@
+<script src="scripts/datetime.js"></script>
 <script src="scripts/catalog.js"></script>
 {{#each clinics}}
     <div class="product_card">
@@ -58,16 +59,7 @@
             <div class="product_card_right_bottom">
                 <p class="selector_text">Выберите день и время для записи на приём</p>
                 <div class="date-time_selector">
-                    <div class="date_selector">
-                        <!-- TODO: make it all `a` element so they're all just references, not buttons  -->
-                        <button class="date_button" id="date_button_1">Вт<br>9</button>
-                        <button class="date_button" id="date_button_2">Ср<br>10</button>
-                        <button class="date_button" id="date_button_3">Чт<br>11</button>
-                        <button class="date_button" id="date_button_4">Пт<br>12</button>
-                        <button class="date_button" id="date_button_5">Сб<br>13</button>
-                        <button class="date_button" id="date_button_6">Вс<br>14</button>
-                        <button class="date_button" id="date_button_7">Пн<br>15</button>
-                    </div>
+                    <div class="date_selector"></div>
                     <div class="time_selector">
                         <a href="modal?name={{name}}" class="time_button" data-modal>10:00</a>
                         <a href="modal?name={{name}}" class="time_button" data-modal>11:00</a>
@@ -87,6 +79,8 @@
     </div>
 {{/each}}
 
+<!--
 <div class="load_more">
     <a class="load_more_button">Загрузить еще</a>
 </div>
+-->

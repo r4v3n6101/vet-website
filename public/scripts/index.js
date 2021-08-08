@@ -27,15 +27,8 @@ $(function () {
         event.preventDefault();
         let parameters = $(this).serializeArray();
         $('.rectangle_4').slideUp();
-        $.ajax("/api/contact", {
-            method: 'GET',
-            data: parameters,
-            success: function (response) {
-                $('.reg_success').slideDown();
-            },
-            error: function (jqXHR, exception) {
-                alert('Error!')
-            },
-        })
+        $.get("/api/contact", parameters, function (data) {
+            $('.reg_success').slideDown();
+        });
     });
 })
