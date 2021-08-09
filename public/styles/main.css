@@ -523,6 +523,30 @@ body {
     border-radius: 0 16px 16px 16px;
 }
 
+.time_alabel {
+    display: block;
+    background-color: #FFFFFF;
+    border: 0;
+    width: 65px;
+    height: 39px;
+    margin-right: 7px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    color: black;
+    outline: none;
+    box-sizing: border-box;
+    padding-top: 12px;
+    padding-bottom: 8px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.time_alabel:focus {
+    background-color: #FC842D;
+    color: #FFFFFF;
+}
+
 .time_button label {
     display: inline-block;
     background-color: #FFFFFF;
@@ -1237,6 +1261,12 @@ section.precise .fill .rating .bg:before {
     .selector_text {
         font-size: 16px;
         margin-top: 17px;
+    }
+
+    .time_alabel {
+        width: 54px;
+        height: 32px;
+        font-size: 13px;
     }
 
     .time_button {

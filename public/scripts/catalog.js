@@ -1,5 +1,5 @@
 $(function () {
-    setupDateTimeEvents(false);
+    setupDateTimeSelector($('.date-time_selector'), false);
 });
 
 $(document).on('click', '*[data-modal]', function (event) {

@@ -1,9 +1,10 @@
-/* function generateDateButtons() {
+function generateDateButtons(id) {
     function capitalize(string) {
         return string.charAt(0).toUpperCase() + string.slice(1);
     }
 
     let buttons = [];
+    let uniqueBlockId = Math.random().toString(36).substring(2, 15);
     let currentDate = new Date();
     for (let i = 0; i < 7; i++) { // One week
         let nextDate = new Date();
@@ -11,46 +12,50 @@
         let dayOfMonth = nextDate.getDate();
         let shortName = capitalize(nextDate.toLocaleString('ru-ru', {weekday: 'short'}))
         let data = nextDate.toLocaleString('ru-ru', {day: "2-digit", month: "2-digit", year: '2-digit'})
-        buttons.push(`<button class="date_button" date-data="${data}">${shortName}<br>${dayOfMonth}</button>`)
+        let uniqueElementId = Math.random().toString(36).substring(2, 15);
+        buttons.push(`<div class="date_button">
+            <input id="date_${uniqueElementId}" type="radio" name="${uniqueBlockId}" nameid="${id}" value="${data}">
+            <label for="date_${uniqueElementId}">${shortName}<br>${dayOfMonth}</label>
+        </div>`);
     }
     return buttons;
 }
 
-function pasteIntoDateSelector() {
-    let dateButtons = generateDateButtons();
-    $('.date_selector').html(dateButtons);
-}
-
-function generateTimeButtons(times, modal, name) {
+function generateTimeButtons(id, times, modal) {
     let timeButtons = [];
-    for (const time of times) {
+    for (let i = 0; i < times.length; i++) {
+        let time = times[i];
         if (modal) {
-            timeButtons.push(`<button type="button" class="time_button">${time}</button>`)
+            timeButtons.push(`<div class="time_button">
+                <input id="time_button${i}_modal" type="radio" name="${id}" value="${time}">
+                <label for="time_button${i}_modal">${time}</label>
+            </div>`);
         } else {
-            timeButtons.push(`<a href="/modal?name=${name}" class="time_button" data-modal="">${time}</a>`)
+            timeButtons.push(`<a href="/modal?name=${id}" class="time_alabel" data-modal="">${time}</a>`)
         }
     }
     return timeButtons;
 }
 
-function pasteIntoTimeSelector(times, modal, name) {
-    let timeButtons = generateTimeButtons(times, modal, name);
-    $('.time_selector').html(timeButtons);
-}
+function setupDateTimeSelector(dateTimeSelector, modal) {
+    let id = modal ?
+        dateTimeSelector.closest('.modal_window_main').find('.clinic_name').text()
+        : dateTimeSelector.closest('.product_card').find('.clinic_name').text();
 
-function dateButtonClickEvent(modal) {
-    $('.date_button').click(function () {
-        let name = $(this).closest('.product_card').find('.clinic_name').text(); // Get from title h3
-        let date = $(this).attr('date-data');
+    let dateButtons = generateDateButtons(id);
+    dateTimeSelector.find('.date_selector').html(dateButtons);
+
+    let inputs = dateTimeSelector.find('.date_button input');
+    inputs.change(function () {
+        let name = $(this).attr('nameid');
+        let date = $(this).val();
+        let timeSelector = dateTimeSelector.find('.time_selector');
 
         $.get("/api/time", {name, date}, function (data) {
-            pasteIntoTimeSelector(data, modal, name);
+            let timeButtons = generateTimeButtons(name, data, modal);
+            timeSelector.html(timeButtons);
         });
-    })
-}
+    });
 
-function setupDateTimeEvents(modal) {
-    pasteIntoDateSelector();
-    dateButtonClickEvent(modal);
-    $('.date_selector > .date_button:first').click();
-} */
+    inputs.first().attr('checked', true).change();
+}

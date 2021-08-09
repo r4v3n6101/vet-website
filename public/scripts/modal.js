@@ -20,7 +20,7 @@ function toggleRotate(e) {
 }
 
 $(function () {
-    setupDateTimeEvents(true);
+    setupDateTimeSelector($('*[datetime]'), true);
 
     $('#reg_success_modal_close_icon').click(function (event) {
         event.preventDefault();
