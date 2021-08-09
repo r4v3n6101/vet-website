@@ -1,4 +1,4 @@
-function generateDateButtons() {
+/* function generateDateButtons() {
     function capitalize(string) {
         return string.charAt(0).toUpperCase() + string.slice(1);
     }
@@ -53,4 +53,4 @@ function setupDateTimeEvents(modal) {
     pasteIntoDateSelector();
     dateButtonClickEvent(modal);
     $('.date_selector > .date_button:first').click();
-}
+} */

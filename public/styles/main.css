@@ -475,7 +475,8 @@ body {
     height: 32px;
 }
 
-.date_button {
+.date_button label {
+    display: inline-block;
     width: 56px;
     height: 72px;
     background-color: #FFFFFF;
@@ -484,21 +485,18 @@ body {
     outline: none;
     position: relative;
     cursor: pointer;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 18px;
+    font-size: 16px;
 }
 
-.first_date_button {
-    width: 56px;
-    background-color: #FFFFFF;
-    border: 0;
-    border-radius: 8px 8px 0 0;
-    outline: none;
-    overflow: hidden;
-    margin-bottom: -10px;
+.date_button input[type=radio] {
+    display: none;
 }
 
-.date_button:focus, .first_date_button:focus {
+.date_button input[type=radio]:checked + label {
     background-color: #F5F2F0;
-    height: 72px;
 }
 
 #horizontal_line_mobile_1, #horizontal_line_mobile_3 {
@@ -525,8 +523,8 @@ body {
     border-radius: 0 16px 16px 16px;
 }
 
-.time_button {
-    display: block;
+.time_button label {
+    display: inline-block;
     background-color: #FFFFFF;
     border: 0;
     width: 65px;
@@ -542,9 +540,14 @@ body {
     padding-bottom: 8px;
     text-decoration: none;
     text-align: center;
+    cursor: pointer;
 }
 
-.time_button:focus {
+.time_button input[type=radio] {
+    display: none;
+}
+
+.time_button input[type=radio]:checked + label {
     background-color: #FC842D;
     color: #FFFFFF;
 }

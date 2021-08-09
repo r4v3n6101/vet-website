@@ -59,8 +59,34 @@
             <div class="product_card_right_bottom">
                 <p class="selector_text">Выберите день и время для записи на приём</p>
                 <div class="date-time_selector">
-                    <div class="date_selector"></div>
-                    <div class="time_selector"></div>
+                    <div class="date_selector">
+                        <div class="date_button">
+                            <input id="date_button1" type="radio" name="date" value="{{date}}">
+                            <label for="date_button1">Пн<br>8</label>
+                        </div>
+                        <div class="date_button">
+                            <input id="date_button2" type="radio" checked name="date" value="{{date}}">
+                            <label for="date_button2">Вт<br>9</label>
+                        </div>
+                        <div class="date_button">
+                            <input id="date_button2" type="radio" name="date" value="{{date}}">
+                            <label for="date_button2">Ср<br>10</label>
+                        </div>
+                    </div>
+                    <div class="time_selector">
+                        <div class="time_button">
+                            <input id="time_button1" type="radio" name="time" value="{{time}}">
+                            <label for="time_button1">10:00</label>
+                        </div>
+                        <div class="time_button">
+                            <input id="time_button2" type="radio" name="time" value="{{time}}">
+                            <label for="time_button2">11:00</label>
+                        </div>
+                        <div class="time_button">
+                            <input id="time_button3" type="radio" name="time" value="{{time}}">
+                            <label for="time_button3">12:00</label>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
