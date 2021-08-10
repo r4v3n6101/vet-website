@@ -32,3 +32,14 @@ $(function () {
         });
     });
 })
+
+// Global event for the whole page, not for every catalog
+$(document).on('click', '*[data-modal]', function (event) {
+    event.preventDefault();
+    $(this).modal({
+        modalClass: "modal_window",
+        showClose: false,
+        fadeDuration: 250,
+        fadeDelay: 0.80
+    });
+})
