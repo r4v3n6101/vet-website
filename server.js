@@ -40,7 +40,7 @@ app.get('/api/appointment', (request, response) => {
         request.query['name'],
         request.query['date'],
         request.query['time'],
-        request.query['number'],
+        request.query['phone'],
         request.query['fio'],
         request.query['animal'],
         request.query['comment']

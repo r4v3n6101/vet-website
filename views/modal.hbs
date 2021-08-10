@@ -56,16 +56,20 @@
                     <p class="modal_reg_date-time_text">Понедельник, 8 марта, с 20:00 до 21,00</p>
                     <a class="modal_reg_date-time_ref">Изменить</a>
                 </div>
-                <div class="date-time_selector" datetime>
-                    <div class="date_selector" id="date_selector_modal"></div>
-                    <div class="time_selector" id="time_selector_modal"></div>
-                </div>
                 <form class="modal_reg_form">
-                    <input type="text" id="reg_name_modal" class="reg_pole_modal" placeholder="Ваше имя">
-                    <input type="tel" id="reg_tel_modal" class="reg_pole_modal" placeholder="+ 7 (9__) ___-__-__">
-                    <input type="text" id="reg_animal_type_modal" class="reg_pole_modal" placeholder="Вид животного">
+                    <div class="date-time_selector" id="date-time_selector_modal">
+                        <div class="date_selector" id="date_selector_modal"></div>
+                        <div class="time_selector" id="time_selector_modal"></div>
+                    </div>
+                    <input type="hidden" name="name" value="{{name}}">
+                    <input type="text" id="reg_name_modal" class="reg_pole_modal" name="fio" placeholder="Ваше имя"
+                           required>
+                    <input type="tel" id="reg_tel_modal" class="reg_pole_modal" name="phone"
+                           placeholder="+ 7 (9__) ___-__-__" required>
+                    <input type="text" id="reg_animal_type_modal" class="reg_pole_modal" name="animal"
+                           placeholder="Вид животного" required>
                     <textarea class="reg_problem_modal" id="reg_problem_modal"
-                              placeholder="Описание проблемы"></textarea>
+                              name="comment" placeholder="Описание проблемы" required></textarea>
                     <input type="submit" class="reg_submit_modal" value="Записаться на приём">
                 </form>
                 <div class="reg_success_modal">

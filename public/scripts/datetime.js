@@ -2,13 +2,13 @@ function generateRandomStr() {
     return Math.random().toString(36).substring(2, 15);
 }
 
-function generateDateButtons(id) {
+function generateDateButtons(id, modal) {
     function capitalize(string) {
         return string.charAt(0).toUpperCase() + string.slice(1);
     }
 
     let buttons = [];
-    let uniqueBlockId = generateRandomStr();
+    let uniqueBlockId = modal ? "date" : generateRandomStr();
     let currentDate = new Date();
     for (let i = 0; i < 7; i++) { // One week
         let nextDate = new Date();
@@ -18,7 +18,8 @@ function generateDateButtons(id) {
         let data = nextDate.toLocaleString('ru-ru', {day: "2-digit", month: "2-digit", year: '2-digit'})
         let uniqueElementId = generateRandomStr();
         buttons.push(`<div class="date_button">
-            <input id="date_${uniqueElementId}" type="radio" name="${uniqueBlockId}" nameid="${id}" value="${data}">
+            <input id="date_${uniqueElementId}" 
+                type="radio" name="${uniqueBlockId}" nameid="${id}" value="${data}">
             <label for="date_${uniqueElementId}">${shortName}<br>${dayOfMonth}</label>
         </div>`);
     }
@@ -27,13 +28,13 @@ function generateDateButtons(id) {
 
 function generateTimeButtons(id, times, modal) {
     let timeButtons = [];
-    let uniqueBlockId = generateRandomStr();
+    let uniqueBlockId = modal ? "time" : generateRandomStr();
     for (let i = 0; i < times.length; i++) {
         let time = times[i];
         if (modal) {
             let uniqueElementId = generateRandomStr();
             timeButtons.push(`<div class="time_button">
-                <input id="time_${uniqueElementId}" type="radio" name="${uniqueBlockId}" value="${time}">
+                <input id="time_${uniqueElementId}" type="radio" name="${uniqueBlockId}" value="${time}" required>
                 <label for="time_${uniqueElementId}">${time}</label>
             </div>`);
         } else {
@@ -48,7 +49,7 @@ function setupDateTimeSelector(dateTimeSelector, modal) {
         dateTimeSelector.closest('.modal_window_main').find('.clinic_name').text()
         : dateTimeSelector.closest('.product_card').find('.clinic_name').text();
 
-    let dateButtons = generateDateButtons(id);
+    let dateButtons = generateDateButtons(id, modal);
     dateTimeSelector.find('.date_selector').html(dateButtons);
 
     let inputs = dateTimeSelector.find('.date_button input');

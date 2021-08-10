@@ -20,7 +20,7 @@ function toggleRotate(e) {
 }
 
 $(function () {
-    setupDateTimeSelector($('*[datetime]'), true);
+    setupDateTimeSelector($('#date-time_selector_modal'), true);
 
     $('#reg_success_modal_close_icon').click(function (event) {
         event.preventDefault();
@@ -49,5 +49,11 @@ $(function () {
         $('.services_list_modal').slideToggle('slow');
         toggleRotate($('#slider_icon_services'));
         event.preventDefault();
+    });
+
+    $('.modal_reg_form').submit(function (event) {
+        event.preventDefault();
+        let data = $(this).serializeArray();
+        console.log(data);
     });
 })
