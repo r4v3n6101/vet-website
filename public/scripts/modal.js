@@ -53,7 +53,13 @@ $(function () {
 
     $('.modal_reg_form').submit(function (event) {
         event.preventDefault();
-        let data = $(this).serializeArray();
-        console.log(data);
+
+        $('.reg_submit_modal').attr('disabled', true);
+        let formData = $(this).serialize();
+        $.get('/api/appointment', formData, function () {
+            $('#time_selector_modal .time_button:has(input:checked)').remove();
+            $('.reg_success_modal').slideDown();
+            $('.reg_submit_modal').attr('disabled', false);
+        });
     });
 })

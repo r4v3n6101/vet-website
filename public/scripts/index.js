@@ -43,3 +43,7 @@ $(document).on('click', '*[data-modal]', function (event) {
         fadeDelay: 0.80
     });
 })
+
+$(document).on($.modal.CLOSE, function () {
+    $('.date_selector input:checked').change(); // Update time-block after closing modal as data can be updated
+});
