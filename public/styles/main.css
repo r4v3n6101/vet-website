@@ -781,8 +781,18 @@ body {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+    cursor: pointer;
 }
 
+.reg_submit_modal:focus {
+    background-color: #FFFFFF;
+    color: #FC842D;
+    border: 1px solid #E7E2E0;
+}
+
+.reg_submit_modal:disabled {
+    background-color: #963326
+}
 #horizontal_line_mobile_4 {
     display: none;
 }
