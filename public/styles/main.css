@@ -1269,7 +1269,7 @@ section.precise .fill .rating .bg:before {
         font-size: 13px;
     }
 
-    .time_button {
+    .time_button label {
         width: 54px;
         height: 32px;
         font-size: 13px;
@@ -1597,7 +1597,11 @@ section.precise .fill .rating .bg:before {
         overflow-x: scroll;
     }
 
-    .date_button {
+    .time_alabel {
+        border: 1px solid #E7E2E0;
+    }
+
+    .date_button label {
         width: 48px;
         height: 48px;
         background: #FFFFFF;
@@ -1605,9 +1609,11 @@ section.precise .fill .rating .bg:before {
         margin-right: 12px;
         border: 1px solid #E7E2E0;
         white-space: nowrap;
+        font-size: 14px;
+        padding-top: 6px;
     }
 
-    .date_button:focus {
+    .date_button input[type=radio]:checked + label {
         background: #F5F2F0;
         height: 48px;
     }
@@ -1623,7 +1629,7 @@ section.precise .fill .rating .bg:before {
         height: auto;
     }
 
-    .time_button {
+    .time_button label {
         border: 1px solid #E7E2E0;
         width: 68px;
         height: 40px;
